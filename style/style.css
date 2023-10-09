@@ -33,6 +33,8 @@ body {
   align-items: center;
   justify-self: start;
   height: 30px;
+  position: relative;
+  z-index: 101;
 }
 
 
@@ -60,7 +62,10 @@ body {
   width: 100%;
   padding: 5px 100px;
   background-color: white;
-  /* box-shadow: 0 1px 4px 10px rgba(0, 0, 0, 0.1); */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .nav,
@@ -233,6 +238,8 @@ body::-webkit-scrollbar-thumb {
 /* Slider starts */
 .slider {
   position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
   width: 100%;
   user-select: none;
   display: flex;
@@ -282,48 +289,77 @@ body::-webkit-scrollbar-thumb {
 
 /* About Us */
 
-.about-us {
-  height: 500px;
-  padding: 0 25px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #b2b3b607;
+.about-us-top{
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  direction: rtl;
+  margin-bottom: 30px;
 }
 
-.about-us-image {
+.about-us-top  h2{
+  padding: 20px 0;
+  text-align: right;
+}
+
+.about-us-top p{
+  line-height: 2.5;
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+.about-us-bottom {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+.about-us-bottom-image {
   width: 50%;
   display: grid;
   place-items: center;
   /* background-color: coral; */
 }
 
-.about-us-image img {
+.about-us-bottom-image img {
   display: block;
   width: 90%;
   max-width: 500px;
   border-radius: 5px;
 }
 
-.about-us-content {
+.about-us-bottom-content {
   width: 50%;
-  display: grid;
-  place-items: center;
   direction: rtl;
   padding: 0 50px;
 }
 
-.about-us-content div {
-  text-align: center;
-  width: 95%;
-  /* background-color: blueviolet; */
+.about-us-bottom-content-head{
+  /* background-color: rebeccapurple; */
+  text-align: right;
+  margin-bottom: 20px;
 }
 
-.about-us-content div h2 {
-  padding: 10px;
-  text-align: center;
+.about-us-bottom-content-detail{
+  /* background-color: #4ec6de; */
+  padding-right: 50px;
 }
 
-@media screen and (max-width: 768px) {
+.about-us-bottom-content-detail ul li{
+  margin: 10px 0;
+  line-height: 2.2;
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+
+
+@media screen and (max-width: 900px) {
   .slider .prev,
   .slider .next {
     margin: 0 5px;
@@ -335,17 +371,17 @@ body::-webkit-scrollbar-thumb {
     bottom: 5px;
   }
 
-  .about-us {
+  .about-us-bottom {
     height: auto;
     padding: 25px;
     row-gap: 20px;
   }
-  .about-us-image {
+  .about-us-bottom-image {
     width: 100%;
     order: 2;
   }
 
-  .about-us-content {
+  .about-us-bottom-content {
     width: 100%;
     font-size: 14px;
     order: 1;
@@ -355,7 +391,9 @@ body::-webkit-scrollbar-thumb {
 
 /* services starts */
 .service {
-  width: 100%;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
