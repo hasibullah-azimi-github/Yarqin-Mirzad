@@ -9,32 +9,58 @@
   src: url("../assets/fonts/iransans/Sans\ a4fran3.woff") format("woff");
 }
 
-
 /* 
   #4EC6DE
 
   #98CA3D
 */
 
-
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "vazir";
 }
 
-body{
+body {
   background-color: #b2b3b607;
 }
+
+.languages{
+  background-color: #4ec6de;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  justify-self: start;
+  height: 30px;
+}
+
+
+
+
+
+.languages a{
+  margin-right: 20px;
+  color: white;
+  /* background-color: rebeccapurple; */
+  font-size: 14px;
+
+
+  
+}
+
+.languages a:last-child{
+  margin-bottom: 5px;
+  
+}
+
+
 
 .nav {
   width: 100%;
   padding: 5px 100px;
   background-color: white;
-  box-shadow: 0 1px 4px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 1px 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .nav,
@@ -75,8 +101,6 @@ a {
   height: 100%;
   width: 100%;
 }
-
-
 
 /* body::-webkit-scrollbar {
   width: 5px;
@@ -156,10 +180,7 @@ body::-webkit-scrollbar-thumb {
 
   .nav {
     padding: 15px 20px;
-
   }
-
- 
 
   .nav .nav-links {
     position: fixed;
@@ -207,7 +228,6 @@ body::-webkit-scrollbar-thumb {
     color: black;
     cursor: pointer;
   }
-
 }
 
 /* Slider starts */
@@ -238,7 +258,7 @@ body::-webkit-scrollbar-thumb {
 .slider .next {
   right: 0;
 }
-.slider .dotsbox{
+.slider .dotsbox {
   width: 100%;
   position: absolute;
   left: 50%;
@@ -260,10 +280,9 @@ body::-webkit-scrollbar-thumb {
   border-color: #98ca3d;
 }
 
-
 /* About Us */
 
-.about-us{
+.about-us {
   height: 500px;
   padding: 0 25px;
   display: flex;
@@ -271,101 +290,89 @@ body::-webkit-scrollbar-thumb {
   background-color: #b2b3b607;
 }
 
-
-.about-us-image{
+.about-us-image {
   width: 50%;
   display: grid;
   place-items: center;
   /* background-color: coral; */
 }
 
-
-.about-us-image img{
+.about-us-image img {
   display: block;
   width: 90%;
   max-width: 500px;
   border-radius: 5px;
 }
 
-.about-us-content{
+.about-us-content {
   width: 50%;
   display: grid;
-  place-items: center ;
+  place-items: center;
   direction: rtl;
   padding: 0 50px;
-
 }
 
-
-.about-us-content div{
+.about-us-content div {
   text-align: center;
   width: 95%;
   /* background-color: blueviolet; */
 }
 
-.about-us-content div h2{
+.about-us-content div h2 {
   padding: 10px;
   text-align: center;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .slider .prev,
-.slider .next {
-  margin: 0 5px;
-  font-size: 25px;
-  padding: 10px;
-}
+  .slider .next {
+    margin: 0 5px;
+    font-size: 25px;
+    padding: 10px;
+  }
 
+  .slider .dotsbox {
+    bottom: 5px;
+  }
 
-.slider .dotsbox {
-  bottom: 5px;
-
-}
-
-  .about-us{
+  .about-us {
     height: auto;
     padding: 25px;
     row-gap: 20px;
   }
-  .about-us-image{
+  .about-us-image {
     width: 100%;
     order: 2;
   }
 
-  .about-us-content{
+  .about-us-content {
     width: 100%;
     font-size: 14px;
     order: 1;
     padding: 0;
   }
-  
 }
 
 /* services starts */
-.service{
+.service {
   width: 100%;
   padding-bottom: 50px;
-  
 }
 
-.service .service-title h1{
+.service .service-title h1 {
   text-align: center;
   padding-top: 10px;
   padding: 50px 0;
-
 }
 
-.service-card{
+.service-card {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
 }
 
-.service-card .service-item{
+.service-card .service-item {
   width: 220px;
   height: 280px;
   margin: 5px;
@@ -374,38 +381,33 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   padding: 20px;
   direction: rtl;
-  
 }
 
-.service-item .service-icon{
-   
-    margin: 0 auto;
-    color:  #4EC6DE;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    font-size: 50px;
-    margin-top: 15px;
+.service-item .service-icon {
+  margin: 0 auto;
+  color: #4ec6de;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 50px;
+  margin-top: 15px;
 }
 
-.service-item .service-title{
+.service-item .service-title {
   margin: 18px 0;
 }
 
-.service-item .service-description p{
+.service-item .service-description p {
   font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
-
-  
-
-  .service-card{
+  .service-card {
     row-gap: 25px;
   }
 
-  .service-card .service-item{
+  .service-card .service-item {
     width: 75%;
   }
-  
 }
+
