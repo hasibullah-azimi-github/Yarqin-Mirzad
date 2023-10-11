@@ -236,7 +236,7 @@ body::-webkit-scrollbar-thumb {
 /* Slider starts */
 .slider {
   position: relative;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   width: 100%;
   user-select: none;
@@ -391,8 +391,9 @@ body::-webkit-scrollbar-thumb {
 /* services starts */
 .service {
   max-width: 1400px;
-  width: 100%;
+  width: 90%;
   margin: 10px auto;
+
   /* background-color: #4ec6de; */
 }
 
@@ -403,10 +404,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .service-cards {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 255px);
+  gap: 80px 75px;
+  /* background-color: #4ec6de; */
+  place-items: center;
+  place-content: center;
 }
 
 .service-cards .service-item {
@@ -441,6 +444,7 @@ body::-webkit-scrollbar-thumb {
 
 .service-item .service-item-title {
   background-image: url('/Yarqin-Mirzad/assets/Icons/service-card-icon-1.svg');
+  /* background-image: url('/assets/Icons/service-card-icon-1.svg'); */
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -458,6 +462,7 @@ body::-webkit-scrollbar-thumb {
 
 .service-item  .service-item-footer{
   background-image: url('/Yarqin-Mirzad/assets/Icons/service-card-icon-2.svg');
+    /* background-image: url('/assets/Icons/service-card-icon-2.svg'); */
   background-size: contain;
   background-repeat: no-repeat;
   width: 100px;
@@ -472,9 +477,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .service-cards {
-    row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, 255px);
   }
 }
 
