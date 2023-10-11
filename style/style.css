@@ -440,7 +440,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .service-item .service-item-title {
-  background-image: url('Yarqin-Mirzad/assets/Icons/service_card_icon_1.svg');
+  background-image: url('/Yarqin-Mirzadassets/Icons/service_card_icon_1.svg');
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -457,7 +457,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .service-item  .service-item-footer{
-  background-image: url('Yarqin-Mirzad/assets/Icons/service_card_icon_2.svg');
+  background-image: url('/Yarqin-Mirzad/assets/Icons/service_card_icon_2.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100px;
