@@ -293,6 +293,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
   direction: rtl;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .about-us-top  h2{
@@ -390,47 +391,81 @@ body::-webkit-scrollbar-thumb {
 /* services starts */
 .service {
   max-width: 1400px;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 50px;
+  width: 100%;
+  margin: 10px auto;
+  /* background-color: #4ec6de; */
 }
 
 .service .service-title h1 {
   text-align: center;
   padding-top: 10px;
-  padding: 50px 0;
+  padding: 65px 0;
 }
 
-.service-card {
+.service-cards {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.service-card .service-item {
-  width: 220px;
-  height: 280px;
+.service-cards .service-item {
+  position: relative;
+  width: 250px;
+  height: 290px;
   margin: 5px;
   border-radius: 2px;
-  border: 1px solid rgb(235, 232, 232);
+  border: 1px solid rgb(247, 247, 247);
   text-align: center;
   padding: 20px;
   direction: rtl;
+  padding-top: 80px;
+  border-radius: 15px;
+  background-color: white;
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
 }
+
+
+
 
 .service-item .service-icon {
   margin: 0 auto;
-  color: #4ec6de;
+  color:#4ec6de;
   display: grid;
   place-items: center;
   border-radius: 50%;
   font-size: 50px;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.service-item .service-title {
-  margin: 18px 0;
+.service-item .service-item-title {
+  background-image: url('/assets/Icons/service_card_icon_1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 180px;
+  height: 75px;
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #4ec6de; */
+}
+
+.service-item  .service-item-footer{
+  background-image: url('/assets/Icons/service_card_icon_2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 11px;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .service-item .service-description p {
@@ -438,12 +473,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 768px) {
-  .service-card {
-    row-gap: 25px;
-  }
-
-  .service-card .service-item {
-    width: 75%;
+  .service-cards {
+    row-gap: 50px;
   }
 }
 
