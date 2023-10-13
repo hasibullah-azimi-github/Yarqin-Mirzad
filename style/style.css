@@ -458,6 +458,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  
   /* background-color: #4ec6de; */
 }
 
