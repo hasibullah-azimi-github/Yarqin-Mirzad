@@ -1,0 +1,53 @@
+
+
+.packages{
+    width: 90%;
+    max-width: 1200px;
+    height: 700px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+
+.package-controller{
+    width: 20%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.package-controller button{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #eeeeee;;
+
+
+}
+
+.package-controller button:hover{
+    background-color: #4ec6de;
+    color: white;
+}
+
+
+
+.package-detail{
+    width: 75%;
+    height: 90%;
+
+
+}

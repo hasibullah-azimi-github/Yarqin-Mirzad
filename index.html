@@ -6,6 +6,7 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>Yarqin Mirzad</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="style/nav.css">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="assets/FontAwesome.Pro.6.4.2/css/all.css" />
 	<script>
@@ -22,19 +23,143 @@
 		<a href="">دری</a>
 	</div>
 
-	<nav class="nav">
-		<img src="assets/images/logo.png" alt="" class="logo">
+	<nav class="navbar">
+		<a href=""><img src="assets/images/logo.png" alt="" class="logo" width="80"></a>
 		<i class="fa-light fa-bars fa-2x navOpenBtn "></i>
-		<ul class="nav-items">
-			<div class="nav-links" id="backdrop">
-				<li><a href="#">پیشنهاد</a></li>
-				<li><a href="#">درباره ما</a></li>
-				<li><a href="#">نمایندگی ها</a></li>
-				<li><a href="#">خدمات ما</a></li>
-				<li><a href="#">صفحه اصلی</a></li>
+		<ul class="horizontal-nav-items">
 
-			</div>
+			<li><a href="index.html">پیشنهاد</a></li>
+			<li><a href="index.html">درباره ما</a></li>
+			<li>
+				<div>نمایندگی ها</div>
+				<ul>
+					<li>
+						<div>فاریاب</div>
+						<ul>
+							<li><a href="packages.html">میمنه</a></li>
+							<li><a href="packages.html">اندخوی</a></li>
+							<li><a href="packages.html">شیرین تگاب</a></li>
+							<li><a href="packages.html">کولیان</a></li>
+						</ul>
+					</li>
+					<li>
+						<div>جوزجان</div>
+						<ul>
+							<li><a href="packages.html">شبرغان</a></li>
+							<li><a href="packages.html">آقچه</a></li>
+							<li><a href="packages.html">فیض آباد</a></li>
+							<li><a href="packages.html">خواجه دوه کوه</a></li>
+							<li><a href="packages.html">درزآب</a></li>
+							<li><a href="packages.html">قوش تپه</a></li>
+						</ul>
+					</li>
+					<li>
+						<div>سمنگان</div>
+						<ul>
+							<li><a href="packages.html">ایبک</a></li>
+							<li><a href="packages.html">خرم</a></li>
+							<li><a href="packages.html">سارباغ</a></li>
+							<li><a href="packages.html"> دره صوف بالا</a></li>
+						</ul>
+					</li>
+					<li>
+						<div>بلخ</div>
+						<ul>
+							<li><a href="packages.html">مزارشریف</a></li>
+							<li><a href="packages.html">بلخ</a></li>
+							<li><a href="packages.html">کود برق</a></li>
+						</ul>
+					</li>
+					<li>
+						<div>سرپل</div>
+						<ul>
+							<li><a href="packages.html">سرپل</a></li>
+							<li><a href="packages.html">سانچارک</a></li>
+							<li><a href="packages.html">گوسفندی</a></li>
+							<li><a href="packages.html">بلخاب</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="index.html">خدمات ما</a></li>
+
+			<li><a href="index.html">صفحه اصلی</a></li>
+
 		</ul>
+	</nav>
+	<section class="overlay"></section>
+	<nav class="sidebar">
+		<div class="sidebar-profile">
+			<i class="fa-light fa-xmark fa-2x  navCloseBtn"></i>
+			<img src="assets/images/profile.png" alt="">
+		</div>
+
+		<div class="sidebar-content">
+			<ul class="menu">
+				<li class="menu-item"><a href="index.html">صفحه اصلی</a></li>
+				<li class="menu-item"><a href="index.html">خدمات ما</a></li>
+				<li class="menu-item">
+					<div><i class="fa-solid fa-plus"></i><span>نمایندگی ها</span></div>
+					<ul class="sub-menu">
+
+						<li class="sub-menu-item">
+							<div class="province"><i class="fa-solid fa-angle-left"></i> <span>فاریاب</span></div>
+							<ul class="districts">
+								<li class="district"><a href="packages.html">میمنه</a></li>
+								<li class="district"><a href="packages.html">اندخوی</a></li>
+								<li class="district"><a href="packages.html">شیرین تگاب</a></li>
+								<li class="district"><a href="packages.html">کولیان</a></li>
+							</ul>
+						</li>
+
+						<li class="sub-menu-item">
+							<div class="province"><i class="fa-solid fa-angle-left"></i> <span>سمنگان</span></div>
+							<ul class="districts">
+								<li class="district"><a href="packages.html">آیبک</a></li>
+								<li class="district"><a href="packages.html">خرم</a></li>
+								<li class="district"><a href="packages.html">سارباغ</a></li>
+							</ul>
+						</li>
+
+						<li class="sub-menu-item">
+							<div class="province"><i class="fa-solid fa-angle-left"></i> <span>جوزجان</span></div>
+							<ul class="districts">
+								<li class="district"><a href="packages.html">شبرغان</a></li>
+								<li class="district"><a href="packages.html">آقچه</a></li>
+								<li class="district"><a href="packages.html">فیض آباد</a></li>
+								<li class="district"><a href="packages.html">خواجه دوه کوه</a></li>
+								<li class="district"><a href="packages.html">درزآب</a></li>
+								<li class="district"><a href="packages.html">قوش تپه</a></li>
+							</ul>
+						</li>
+
+
+
+						<li class="sub-menu-item">
+							<div class="province"><i class="fa-solid fa-angle-left"></i> <span>بلخ</span></div>
+							<ul class="districts">
+								<li class="district"><a href="packages.html">مزارشریف</a></li>
+								<li class="district"><a href="packages.html">بلخ</a></li>
+								<li class="district"><a href="packages.html">کود برق</a></li>
+							</ul>
+						</li>
+
+						<li class="sub-menu-item">
+							<div class="province"><i class="fa-solid fa-angle-left"></i> <span>سرپل</span></div>
+							<ul class="districts">
+								<li class="district"><a href="packages.html">سرپل</a></li>
+								<li class="district"><a href="packages.html">سانچارک</a></li>
+								<li class="district"><a href="packages.html">گوسفندی</a></li>
+								<li class="district"><a href="packages.html">بلخاب</a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</li>
+				<li class="menu-item"><a href="index.html">درباره ما</a></li>
+				<li class="menu-item"><a href="index.html">پیشنهاد</a></li>
+			</ul>
+		</div>
 	</nav>
 
 	<div class="slider">
@@ -242,24 +367,48 @@
 
 			<div class="content">
 				<p>
-					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+					و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+					کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+					آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+					ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+					تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+					دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
 				</p>
 				<br>
 				<p>
-					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+					و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+					کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+					آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+					ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+					تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+					دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
 				</p>
 			</div>
 
 			<div class="content">
 				<p>
-					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+					و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+					کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+					آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+					ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+					تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+					دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 				</p>
 				<br>
 				<br>
 				<p>
-					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+					و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+					کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+					آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+					ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+					تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+					دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
 				</p>
 			</div>
@@ -267,52 +416,66 @@
 
 	</div>
 
-		<div class="proposal">
-			<div class="proposal-title">
-				<h1>پیشنهاد</h1>
-			</div>
-			<div class="proposal-detail">
-				<form>
-					<div>
-						<label for="pname">نام</label>
-						<input type="text" id="pname">
-					</div>
-					<div>
-						<label for="ptext">پیام</label>
-						<textarea id="ptext"></textarea>
-					</div>
-					<div>
-						<button>ارسال</button>
-					</div>
-				</form>
-			</div>
+	<div class="proposal">
+		<div class="proposal-title">
+			<h1>پیشنهاد</h1>
 		</div>
+		<div class="proposal-detail">
+			<form>
+				<div>
+					<label for="pname">نام</label>
+					<input type="text" id="pname">
+				</div>
+				<div>
+					<label for="ptext">پیام</label>
+					<textarea id="ptext"></textarea>
+				</div>
+				<div>
+					<button>ارسال</button>
+				</div>
+			</form>
+		</div>
+	</div>
 
-		<div class="footer"></div>
-
-
-		<script src="script/jsfile.js"></script>
-		<script src="./script/script.js" defer></script>
-
-		<script>
-
-			const tabs = document.querySelectorAll('.tab_btn');
-
-			const all_content = document.querySelectorAll('.content');
-
-			tabs.forEach((tab, index) => {
-				tab.addEventListener('click', (e) => {
-					tabs.forEach(tab => { tab.classList.remove('active') });
-					tab.classList.add('active');
-
-					var line = document.querySelector(".line");
-					all_content.forEach(content => { content.classList.remove('active') });
-					all_content[index].classList.add("active");
-				});
-			})
+	<div class="footer"></div>
 
 
-		</script>
+	<script src="script/jsfile.js"></script>
+	<script src="./script/navbar.js" defer></script>
+
+	<script>
+		const slider = document.querySelector('.slider');
+		const cards = document.querySelector('.slide-img');
+		let isPressed = false;
+		let cursorX;
+
+		slider.addEventListener("mousemove", (e) => {
+			if (!isPressed) return;
+			e.preventDefault();
+			cards.style.left = `${e.offsetX - cursorX}px`;
+		});
+	</script>
+
+
+	<script>
+
+		const tabs = document.querySelectorAll('.tab_btn');
+
+		const all_content = document.querySelectorAll('.content');
+
+		tabs.forEach((tab, index) => {
+			tab.addEventListener('click', (e) => {
+				tabs.forEach(tab => { tab.classList.remove('active') });
+				tab.classList.add('active');
+
+				var line = document.querySelector(".line");
+				all_content.forEach(content => { content.classList.remove('active') });
+				all_content[index].classList.add("active");
+			});
+		})
+
+
+	</script>
 
 </body>
 
