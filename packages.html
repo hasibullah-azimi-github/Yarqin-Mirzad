@@ -161,15 +161,128 @@
 
 	<div class="packages">
 		<div class="package-controller">
-			<button>محدود</button>
-			<button>نامحدود</button>
-			<button>فامیلی</button>
+			<button type="button" class="active">محدود</button>
+			<button type="button">نامحدود</button>
+			<button type="button">فامیلی</button>
 		</div>
-		<div class="package-detail"></div>
+
+		<div class="package-detail">
+
+			
+			<!-- <div class="package">
+				<div class="package-shape">
+					<div class="package-top-shape-rectangle">
+						<div class="package-top-shape-data">
+							<h2>25 GB</h2>
+						</div>
+						<div class="package-shape-top-triangle"></div>
+					</div>
+				</div> 
+				<div class="package-data">
+					<div class="package-data-money">
+						<i class="fa-regular fa-money-bill"></i>
+						<p> 750 افغانی</p>
+					</div>
+
+					<div class="package-data-duration">
+						<i class="fa-solid fa-calendar-days"></i>
+						<p>یک ماه</p>
+					</div>
+
+					<div class="package-data-speed">
+						<i class="fa-regular fa-gauge"></i>
+						<p>2 Mbs</p>
+					</div>
+					<div class="package-data-connectionType">
+						<i class="fa-solid fa-signal-stream"></i>
+						<p>اختصاصی</p>
+					</div>
+				</div>
+				<div class="package-bottom-shape"></div>
+			</div> -->
+
+		</div>
 	</div>
 
-
-
     <script src="./script/navbar.js" defer></script>
+
+	<script>
+	
+
+		let package_detail = document.querySelector('.package-detail');
+
+
+		let package_data = [
+		
+		
+		{
+			dataAmount : "75 GB",
+			money: "1500",
+			speed: "2.5 Mbs"
+		},
+		{
+			dataAmount : "45 GB",
+			money: "1199",
+			speed: "2 Mbs"
+		},
+		{
+			dataAmount : "25 GB",
+			money: "750",
+			speed: "2 Mbs"
+		},
+		{
+			dataAmount : "180 GB",
+			money: "3000",
+			speed: "3.5 Mbs"
+		},
+		{
+			dataAmount : "150 GB",
+			money: "2500",
+			speed: "3.2 Mbs"
+		},
+		{
+			dataAmount : "120 GB",
+			money: "2200",
+			speed: "3 Mbs"
+		},
+
+		]
+		for (let i = 0; i < package_data.length; i++) {
+			package_detail.innerHTML += `
+		<div class="package">
+				<div class="package-shape">
+					<div class="package-top-shape-rectangle">
+						<div class="package-top-shape-data">
+							<h2>${package_data[i].dataAmount}</h2>
+						</div>
+						<div class="package-shape-top-triangle"></div>
+					</div>
+				</div> 
+				<div class="package-data">
+					<div class="package-data-money">
+						<i class="fa-regular fa-money-bill"></i>
+						<p> ${package_data[i].money} افغانی</p>
+					</div>
+
+					<div class="package-data-duration">
+						<i class="fa-solid fa-calendar-days"></i>
+						<p>یک ماه</p>
+					</div>
+
+					<div class="package-data-speed">
+						<i class="fa-regular fa-gauge"></i>
+						<p>${package_data[i].speed}</p>
+					</div>
+					<div class="package-data-connectionType">
+						<i class="fa-solid fa-signal-stream"></i>
+						<p>اختصاصی</p>
+					</div>
+				</div>
+				<div class="package-bottom-shape"></div>
+			</div>
+
+		`;
+		}
+	</script>
 </body>
 </html>

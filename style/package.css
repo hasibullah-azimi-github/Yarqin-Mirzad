@@ -3,11 +3,11 @@
 .packages{
     width: 90%;
     max-width: 1200px;
-    height: 700px;
-    margin: 50px auto;
+    min-height: 700px;
+    margin: 20px auto;
+    padding: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: white;
     border-radius: 20px;
 
@@ -17,7 +17,7 @@
 .package-controller{
     width: 20%;
     height: 100%;
-    padding: 50px 0;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -44,10 +44,112 @@
 }
 
 
+.package-controller button.active{
+    background-color: #4ec6de;
+    color: white;
+}
+
 
 .package-detail{
     width: 75%;
     height: 90%;
+    padding: 0 50px;
+    /* background-color: azure; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    justify-content: center;
 
 
+}
+
+.package{
+    background-color: #fff;
+    margin-top: 50px;
+    padding-top: 90px;
+    width: 200px;
+    height: 280px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+.package-shape{
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.package-shape .package-top-shape-rectangle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 120px;
+    border-radius: 15px;
+    background-color: #4ec6de;
+}
+
+
+.package-top-shape-data h2{
+    color: white;
+
+}
+
+.package-shape .package-shape-top-triangle{
+    position: absolute;
+    bottom: 0;
+    width: 0;
+	height: 0;
+    left: 50%;
+    bottom: -9px;
+    transform: translateX(-50%);
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #4ec6de;
+
+}
+
+
+.package-bottom-shape{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #98ca3d;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid gainsboro;
+
+}
+
+
+.package-data{
+   width: 100%;
+   padding: 0 15px;
+   /* background-color: blueviolet; */
+}
+
+.package-data-money, .package-data-duration, .package-data-connectionType, .package-data-speed{
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.package-data-money i, .package-data-duration i, .package-data-connectionType i, .package-data-speed i{
+    font-size: 18px;
+    color: #000000;
+
+}
+
+.package-data-money p, .package-data-duration p, .package-data-connectionType p, .package-data-speed p{
+    margin-right: 12px;
+}
+
+.package-data-speed p{
+    direction: ltr;
 }
