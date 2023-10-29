@@ -8,6 +8,7 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="stylesheet" href="style/nav.css">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/footer.css">
 	<link rel="stylesheet" href="assets/FontAwesome.Pro.6.4.2/css/all.css" />
 	<script>
 		window.onload = function () {
@@ -293,11 +294,24 @@
 	<div class="about_us">
 
 		<h1>در باره ما</h1>
-		<div class="tab_box">
-			<button class="tab_btn active">تاریخچه</button>
-			<button class="tab_btn">دستاوردها</button>
-			<button class="tab_btn">مجوز ها</button>
-		</div>
+		<div class="tabs">
+			<input type="radio" name="slider" id="home" checked>
+			<input type="radio" name="slider" id="about">
+			<input type="radio" name="slider" id="code">
+			<div class="tab_box">
+			  <div class="slider"></div>
+			  <label for="home" class="home tab_btn">
+				تاریخچه
+			  </label>
+			  <label for="about" class="about tab_btn">
+				دستاوردها
+			  </label>
+			  <label for="code" class="code tab_btn">
+				مجوز ها
+			  </label>
+			</div>
+
+		  </div>
 
 		<div class="content_box">
 			<div class="content active">
@@ -437,8 +451,31 @@
 		</div>
 	</div>
 
-	<div class="footer"></div>
-
+	<div class="footer">
+		<h1>ارتباط با ما</h1>
+		<div class="communication">
+			<div class="right-area">
+				<h3>شماره های تماس</h3>
+				<div>
+					<p>07xxxxxxxxx</p>
+					<p>07xxxxxxxxx</p>
+				</div>
+				<h3>ایمیل آدرس</h3>
+				<div>
+					<p>www.yarginmirzad@gmail.com</p>
+				</div>
+			</div>
+			<div class="left-area">
+				<h3>شبکه های اجتماعی</h3>
+				<ul>
+					<li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<script src="script/jsfile.js"></script>
 	<script src="./script/navbar.js" defer></script>
@@ -465,12 +502,8 @@
 
 		tabs.forEach((tab, index) => {
 			tab.addEventListener('click', (e) => {
-				tabs.forEach(tab => { tab.classList.remove('active') });
-				tab.classList.add('active');
-
-				var line = document.querySelector(".line");
-				all_content.forEach(content => { content.classList.remove('active') });
-				all_content[index].classList.add("active");
+				all_content.forEach(content => {content.classList.remove('active')});
+                all_content[index].classList.add("active");
 			});
 		})
 

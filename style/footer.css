@@ -1,0 +1,82 @@
+
+
+
+.footer{
+    width: 100%;
+    padding: 30px;
+    background-color: #e1f1fd;
+    direction: rtl;
+  
+  }
+  
+
+
+.footer h1{
+    padding: 20px;
+  }
+  
+  .communication{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .communication .right-area{
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .communication .right-area div{
+    padding: 15px 0;
+  }
+  
+  .footer .left-area{
+    width: 50%;
+    padding: 20px;
+  }
+  
+  
+  
+  .left-area ul{
+    list-style-type: none;
+    width: 100%;
+    margin-top: 15px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  
+  }
+  
+  
+  .left-area ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffff;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   
+  }
+  
+  .left-area ul li a i{
+    font-size: 25px;
+    color: black;
+  }
+
+  
+  .left-area ul li:first-child a:hover i{
+    color: #1877f2;
+  }
+  
+  .left-area ul li:nth-child(2) a:hover i{
+    color: #25d366;
+  }
+  
+  .left-area ul li:nth-child(3) a:hover i{
+    color: #c32aa3;
+  }
+  .left-area ul li:last-child a:hover i{
+    color: #ff0000;
+  }
