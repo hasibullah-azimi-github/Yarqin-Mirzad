@@ -4,9 +4,10 @@
 .footer{
     width: 100%;
     padding: 30px;
-    background-color: #e1f1fd;
+    background-color: #F9FAFE;
     direction: rtl;
-  
+    border-top: 1px solid rgb(238, 236, 236);
+    
   }
   
 
@@ -66,17 +67,17 @@
   }
 
   
-  .left-area ul li:first-child a:hover i{
+  .left-area ul li:first-child a i{
     color: #1877f2;
   }
   
-  .left-area ul li:nth-child(2) a:hover i{
+  .left-area ul li:nth-child(2) a i{
     color: #25d366;
   }
   
-  .left-area ul li:nth-child(3) a:hover i{
+  .left-area ul li:nth-child(3) a i{
     color: #c32aa3;
   }
-  .left-area ul li:last-child a:hover i{
+  .left-area ul li:last-child a i{
     color: #ff0000;
   }
