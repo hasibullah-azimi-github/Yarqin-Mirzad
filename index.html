@@ -11,9 +11,9 @@
 	<link rel="stylesheet" href="style/footer.css">
 	<link rel="stylesheet" href="assets/FontAwesome.Pro.6.4.2/css/all.css" />
 	<script>
-		// window.onload = function () {
-		// 	document.body.style.visibility = "visible";
-		// };
+		window.onload = function () {
+			// document.body.style.visibility = "visible";
+		};
 	</script>
 </head>
 
@@ -512,14 +512,17 @@
 	</script>
 
 
-<script>
+<script defer>
 
 	
 window.onload = () => {
+
+	document.body.style.visibility = "visible";
+
     const links = document.querySelectorAll(".section-links");
   
     links.forEach(link => {
-		console.log(link);
+
         link.addEventListener("click", (e) =>{
             e.preventDefault();
             document.querySelector(e.target.hash).scrollIntoView({
