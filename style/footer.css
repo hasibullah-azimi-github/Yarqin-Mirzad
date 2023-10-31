@@ -71,6 +71,11 @@
     color: #1877f2;
   }
   
+    
+  .left-area ul li a:hover{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(39, 223, 64, 0.514) 0px 0px 0px 1px;
+  }
+
   .left-area ul li:nth-child(2) a i{
     color: #25d366;
   }
