@@ -10,11 +10,6 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/footer.css">
 	<link rel="stylesheet" href="assets/FontAwesome.Pro.6.4.2/css/all.css" />
-	<script>
-		window.onload = function () {
-			// document.body.style.visibility = "visible";
-		};
-	</script>
 </head>
 
 <body>
@@ -33,51 +28,51 @@
 			<li><a class="section-links" href="#aboutUs">درباره ما</a></li>
 			<li>
 				<div>نمایندگی ها</div>
-				<ul>
+				<ul class="agents">
 					<li>
 						<div>فاریاب</div>
 						<ul>
-							<li><a href="packages.html">میمنه</a></li>
-							<li><a href="packages.html">اندخوی</a></li>
-							<li><a href="packages.html">شیرین تگاب</a></li>
-							<li><a href="packages.html">کولیان</a></li>
+							<li><a href="packages.html" >میمنه</a></li>
+							<li><a href="packages.html" >اندخوی</a></li>
+							<li><a href="packages.html" >شیرین تگاب</a></li>
+							<li><a href="packages.html" >کولیان</a></li>
 						</ul>
 					</li>
 					<li>
 						<div>جوزجان</div>
 						<ul>
-							<li><a href="packages.html">شبرغان</a></li>
-							<li><a href="packages.html">آقچه</a></li>
-							<li><a href="packages.html">فیض آباد</a></li>
-							<li><a href="packages.html">خواجه دوه کوه</a></li>
-							<li><a href="packages.html">درزآب</a></li>
-							<li><a href="packages.html">قوش تپه</a></li>
+							<li><a href="packages.html" >شبرغان</a></li>
+							<li><a href="packages.html" >آقچه</a></li>
+							<li><a href="packages.html" >فیض آباد</a></li>
+							<li><a href="packages.html" >خواجه دوه کوه</a></li>
+							<li><a href="packages.html" >درزآب</a></li>
+							<li><a href="packages.html" >قوش تپه</a></li>
 						</ul>
 					</li>
 					<li>
 						<div>سمنگان</div>
 						<ul>
-							<li><a href="packages.html">ایبک</a></li>
-							<li><a href="packages.html">خرم</a></li>
-							<li><a href="packages.html">سارباغ</a></li>
-							<li><a href="packages.html"> دره صوف بالا</a></li>
+							<li><a href="packages.html" >ایبک</a></li>
+							<li><a href="packages.html" >خرم</a></li>
+							<li><a href="packages.html" >سارباغ</a></li>
+							<li><a href="packages.html" > دره صوف بالا</a></li>
 						</ul>
 					</li>
 					<li>
 						<div>بلخ</div>
 						<ul>
-							<li><a href="packages.html">مزارشریف</a></li>
-							<li><a href="packages.html">بلخ</a></li>
-							<li><a href="packages.html">کود برق</a></li>
+							<li><a href="packages.html" >مزارشریف</a></li>
+							<li><a href="packages.html" >بلخ</a></li>
+							<li><a href="packages.html" >کود برق</a></li>
 						</ul>
 					</li>
 					<li>
 						<div>سرپل</div>
 						<ul>
-							<li><a href="packages.html">سرپل</a></li>
-							<li><a href="packages.html">سانچارک</a></li>
-							<li><a href="packages.html">گوسفندی</a></li>
-							<li><a href="packages.html">بلخاب</a></li>
+							<li><a href="packages.html" >سرپل</a></li>
+							<li><a href="packages.html" >سانچارک</a></li>
+							<li><a href="packages.html" >گوسفندی</a></li>
+							<li><a href="packages.html" >بلخاب</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -97,8 +92,8 @@
 
 		<div class="sidebar-content">
 			<ul class="menu">
-				<li class="menu-item"><a href="index.html">صفحه اصلی</a></li>
-				<li class="menu-item"><a href="index.html">خدمات ما</a></li>
+				<li class="menu-item"><a class="section-links" href="#home">صفحه اصلی</a></li>
+				<li class="menu-item"><a class="section-links" href="#services">خدمات ما</a></li>
 				<li class="menu-item">
 					<div><i class="fa-solid fa-plus"></i><span>نمایندگی ها</span></div>
 					<ul class="sub-menu">
@@ -157,8 +152,8 @@
 
 					</ul>
 				</li>
-				<li class="menu-item"><a href="index.html">درباره ما</a></li>
-				<li class="menu-item"><a href="index.html">پیشنهاد</a></li>
+				<li class="menu-item"><a class="section-links" href="#aboutUs">درباره ما</a></li>
+				<li class="menu-item"><a class="section-links" href="#offer">پیشنهاد</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -288,25 +283,21 @@
 	</div>
 
 
-
-
-
 	<div class="about_us"  id="aboutUs">
-
 		<h1>در باره ما</h1>
 		<div class="tabs">
-			<input type="radio" name="slider" id="home" checked>
-			<input type="radio" name="slider" id="about">
-			<input type="radio" name="slider" id="code">
+			<input type="radio" name="slider" id="history" checked>
+			<input type="radio" name="slider" id="achievement">
+			<input type="radio" name="slider" id="license">
 			<div class="tab_box">
 			  <div class="slider"></div>
-			  <label for="home" class="home tab_btn">
+			  <label for="history" class="tab_btn">
 				تاریخچه
 			  </label>
-			  <label for="about" class="about tab_btn">
+			  <label for="achievement" class="tab_btn">
 				دستاوردها
 			  </label>
-			  <label for="code" class="code tab_btn">
+			  <label for="license" class="tab_btn">
 				مجوز ها
 			  </label>
 			</div>
@@ -531,28 +522,6 @@ window.onload = () => {
         });
     })
 }
-
-
-
-// window.onscroll = () => {
-  
-// //    .header-container.scrolled
-
-//     const headerContainer = document.querySelector(".header-container");
-
-//     if(this.scrollY > 0){
-//        if(!headerContainer.classList.contains("scrolled")){
-//         headerContainer.classList.add("scrolled");
-//        }
-//     }else{
-//         if(headerContainer.classList.contains("scrolled")){
-//             headerContainer.classList.remove("scrolled");
-//            }
-//     }
-
-  
-// }
-
 
 </script>
 

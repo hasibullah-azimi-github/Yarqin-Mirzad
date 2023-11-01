@@ -56,4 +56,12 @@
           } 
          });
 
+         let navbar_menu = document.querySelectorAll(".menu-item  .section-links");
+         navbar_menu.forEach(menu => {
+             menu.addEventListener("click", (e) =>{
+                navbar.classList.toggle("show-menu");
+                overlay.classList.toggle("show-overlay");
+             });
+         });
+
         // Navbar Script End

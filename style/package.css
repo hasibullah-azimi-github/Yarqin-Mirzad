@@ -39,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    direction:rtl;
 
 
 }
@@ -50,17 +51,17 @@
     padding: 10px;
     outline: none;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     background-color: #eeeeee;;
 
 
 }
 
-.package-controller button:hover{
+/* .package-controller button:hover{
     background-color: #4ec6de;
     color: white;
-}
+} */
 
 
 .package-controller button.active{
@@ -68,12 +69,26 @@
     color: white;
 }
 
+.content_box{
+    width: 100%;
+
+}
+
+.content_box .content{
+    display: none;
+}
+
+.content_box .content.active{
+    display: block;
+}
 
 .package-detail{
-    width: 90%;
-    padding: 0 50px;
+    width: 100%;
+    padding: 25px;
     /* background-color: azure; */
+    /* background-color: rebeccapurple; */
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px 50px;
     justify-content: center;

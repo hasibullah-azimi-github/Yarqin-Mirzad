@@ -107,7 +107,7 @@
   color: #98ca3d;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 1;
+
 
 }
 
@@ -124,12 +124,15 @@
   transition: all 0.2s ease-out;
 }
 
+#history:checked ~ .tab_box .slider{
+  right: 0;
+}
 
-#about:checked ~ .tab_box .slider{
+#achievement:checked ~ .tab_box .slider{
   right: 33.3%;
 }
 
-#code:checked ~ .tab_box .slider{
+#license:checked ~ .tab_box .slider{
   right: 66.6%;
 }
 
