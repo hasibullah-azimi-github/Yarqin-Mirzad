@@ -122,11 +122,35 @@
 
   }
 
-  .agents li div:hover, .agents ul li a:hover {
+  .agents ul li a{
+    color: gray;
+  } 
+  
+  .agents li div:hover, .agents ul li a:hover{
     background-color: #4ec6de;
     color: #fff;
   }
-  
+
+  .agents li:hover div{
+    background-color: #4ec6de;
+    color: #fff;
+  }
+
+  .agents li > div > i{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+
+  }
+
+  .agents li:hover div > i{
+    visibility: visible;
+  }
+
+
   .navbar ul li:not(:has(> a)) div{
     width: 130px;
     text-align: center;
@@ -182,6 +206,9 @@
     }
   }
   /* Navbar End */
+
+
+
   
   /* Siderbar Start */
   
