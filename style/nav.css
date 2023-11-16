@@ -137,7 +137,6 @@
   }
 
   .agents li > div > i{
-    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 15px;
@@ -145,11 +144,6 @@
     transform: translateY(-50%);
 
   }
-
-  .agents li:hover div > i{
-    visibility: visible;
-  }
-
 
   .navbar ul li:not(:has(> a)) div{
     width: 130px;

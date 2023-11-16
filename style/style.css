@@ -424,3 +424,17 @@
 .proposal-detail button:hover{
   opacity: 0.8;
 }
+
+
+
+.company-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 30px;
+
+}
+
+.company-container img{
+  width: 180px;
+}
