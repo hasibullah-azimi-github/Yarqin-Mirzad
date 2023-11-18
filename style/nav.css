@@ -46,7 +46,6 @@
     margin-right: 20px;
     color: white;
     text-decoration: none;
-    /* background-color: rebeccapurple; */
     font-size: 14px;
     
   }
@@ -114,11 +113,10 @@
   .navbar ul li a,
   .navbar ul li:not(:has( > a)) div {
     font-size: 18px;
-    color: #98ca3d;
+    color: black;
     display: block;
     user-select: none;
   }
-
 
 .navbar-items > li:not(:has(> a)) > div > p{
   width: 130px;
@@ -150,11 +148,15 @@
     cursor: pointer;
   }
 
-  .navbar-items > li > a:hover, .navbar-items > li > div:hover p,
-  .vertical-navbar li div:hover, .vertical-navbar ul li a:hover,  .vertical-navbar li:hover div{
+  .navbar-items > li > a:hover, 
+  .navbar-items > li > div:hover p,
+  .vertical-navbar li div:hover, 
+  .vertical-navbar ul li a:hover,  
+  .vertical-navbar li:hover div, 
+  .navbar-items > li:has(div):hover > div > p{
     background-color: #F5F6F7;
-
   }
+
 
   .vertical-navbar > li > div > i{
     position: absolute;
@@ -183,6 +185,7 @@
   .vertical-navbar > li > div, .vertical-navbar-items li > a{
     margin: 5px;
   }
+
   
   .navbar-items > li:not(:has( > a)):hover > .vertical-navbar, .vertical-navbar > li:has( > div):hover > ul{
     display: block;
