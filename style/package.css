@@ -58,11 +58,6 @@
 
 }
 
-/* .package-controller button:hover{
-    background-color: #4ec6de;
-    color: white;
-} */
-
 
 .package-controller button.active{
     background-color: #4ec6de;

@@ -74,11 +74,6 @@
   
   }
 
-  .horizontal-nav-items{
-    display: flex;
-    align-items: center;
-  }
-  
   .navbar > a {
     padding: 0;
     margin: 0;
@@ -96,7 +91,7 @@
     
   }
   
-  .navbar .navOpenBtn {
+  .navbar > .navOpenBtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -105,84 +100,97 @@
     display: none;
     color: black;
   }
-  
-  .navbar ul li:not(:has(> a)){
+
+  .navbar-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-items > li:not(:has( > a)), .vertical-navbar > li:not(:has( > a)){
     position: relative;
   }
 
   .navbar ul li a,
-  .navbar ul li:not(:has(> a)) div {
+  .navbar ul li:not(:has( > a)) div {
     font-size: 18px;
-    padding: 15px;
-    height: 100%;
     color: #98ca3d;
     display: block;
-    cursor: pointer;
     user-select: none;
-
   }
 
-  .agents ul li a{
-    color: gray;
-  } 
+
+.navbar-items > li:not(:has(> a)) > div > p{
+  width: 130px;
+  text-align: center;
+
+}
+
+.navbar-items > li{
+  margin: 0 5px;
+}
+
+.navbar-items > li > a,
+.navbar-items > li > div > p{
+    padding: 12px;
+    border-radius: 5px;
+  }
+
+ 
+.navbar-items > li > div{
+    margin: 5px 0;
+}
+  .vertical-navbar > li a, .vertical-navbar div{
+    padding: 15px;
+    border-radius: 5px;
+  }
+
   
-  .agents li div:hover, .agents ul li a:hover{
-    background-color: #4ec6de;
-    color: #fff;
+  .vertical-navbar li:not(:has( > a)) div, .navbar-items > li:not(:has( > a)) > div > p {
+    cursor: pointer;
   }
 
-  .agents li:hover div{
-    background-color: #4ec6de;
-    color: #fff;
+  .navbar-items > li > a:hover, .navbar-items > li > div:hover p,
+  .vertical-navbar li div:hover, .vertical-navbar ul li a:hover,  .vertical-navbar li:hover div{
+    background-color: #F5F6F7;
+
   }
 
-  .agents li > div > i{
+  .vertical-navbar > li > div > i{
     position: absolute;
     top: 50%;
     left: 15px;
-    font-size: 20px;
+    font-size: 18px;
     transform: translateY(-50%);
 
   }
 
-  .navbar ul li:not(:has(> a)) div{
-    width: 130px;
-    text-align: center;
-  }
-  
-  .navbar ul li ul {
+  .vertical-navbar, .vertical-navbar-items{
     position: absolute;
-    left: 0;
     width: 130px;
-    background: #fff;
+    background: #ffffff;
     display: none;
-    box-shadow: 0px 0px 2px 0px rgb(238, 237, 237);
     z-index: 5;
     text-align: center;
   }
-  
-  .navbar ul li ul li ul{
+
+  .vertical-navbar-items{
     width: 150px;
-  }
-  .navbar > ul > li > ul {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .navbar ul li ul li {
-    width: 100%;
-    box-shadow: 0px 0px 2px 0px rgb(238, 237, 237);
-  }
-  
-  .navbar ul li ul li ul {
-    top: 0;
     left: -150px;
+    top: -5px;
+  }
+
+  .vertical-navbar > li > div, .vertical-navbar-items li > a{
+    margin: 5px;
   }
   
-  .navbar ul li:hover > ul {
+  .navbar-items > li:not(:has( > a)):hover > .vertical-navbar, .vertical-navbar > li:has( > div):hover > ul{
     display: block;
   }
-  
+
+
+
+
   @media screen and (max-width: 768px) {
     .navbar {
       padding: 5px 30px;
@@ -195,7 +203,7 @@
       display: block;
     }
   
-    .navbar .horizontal-nav-items {
+    .navbar .navbar-items {
       display: none;
     }
   }
