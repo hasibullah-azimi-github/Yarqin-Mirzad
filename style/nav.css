@@ -110,10 +110,6 @@ body {
   user-select: none;
 }
 
-.navbar ul li a {
-  transition: background-color 0.1s ease-in-out;
-}
-
 .navbar-items > li > div > p {
   width: 140px;
   text-align: center;

@@ -540,7 +540,6 @@ const links = document.querySelectorAll(".section-links");
 
 
 let sections = document.querySelectorAll('.section');
-
 window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach((section, index) => {
@@ -573,7 +572,6 @@ window.addEventListener('scroll', () => {
                     link.classList.remove("active");
                 };
 				document.querySelector('.navbar-items > li:has( > a) a[href*= ' + current + ']').classList.add('active');
-				
     });
   
 });
