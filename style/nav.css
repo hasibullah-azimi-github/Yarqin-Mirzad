@@ -118,11 +118,31 @@
     user-select: none;
   }
 
-.navbar-items > li:not(:has(> a)) > div > p{
-  width: 130px;
-  text-align: center;
+  
+  .navbar ul li a{
+    transition: background-color 0.1s ease-in-out;
+  }
 
+
+.navbar-items > li > div > p{
+  width: 140px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s ease-in-out;
 }
+
+.navbar-items > li > div > p > i{
+  margin-right: 8px;
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center;
+}
+
+.navbar-items > li:has(div):hover > div > p > i{
+  transform: rotate(-90deg);
+}
+
 
 .navbar-items > li{
   margin: 0 5px;
@@ -133,6 +153,7 @@
     padding: 12px;
     border-radius: 5px;
   }
+
 
  
 .navbar-items > li > div{
