@@ -1,130 +1,120 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../assets/fonts/vazir/Vazir-Medium.woff") format("woff"),
+    url("../assets/fonts/vazir/Vazir-Medium.woff2") format("woff2");
+}
 
 @font-face {
-    font-family: "vazir";
-    src: url("../assets/fonts/vazir/Vazir-Medium.woff") format("woff"),
-      url("../assets/fonts/vazir/Vazir-Medium.woff2") format("woff2");
-  }
-  
-  @font-face {
-    font-family: "iransans";
-    src: url("../assets/fonts/iransans/Sans\ a4fran3.woff") format("woff");
-  }
-  
-  /* 
+  font-family: "iransans";
+  src: url("../assets/fonts/iransans/Sans\ a4fran3.woff") format("woff");
+}
+
+/* 
     #4EC6DE
   
     #98CA3D
   */
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "vazir";
-  }
-  
-  body {
-    background-color: #b2b3b607;
-    visibility: hidden;
-  }
-  
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "vazir";
+}
 
-.languages{
-    background-color: #4ec6de;
-    display: flex;
-    padding: 0 15px;
-    align-items: center;
-    justify-self: start;
-    height: 30px;
-    /* position: relative;
+body {
+  background-color: #b2b3b607;
+  visibility: hidden;
+}
+
+.languages {
+  background-color: #4ec6de;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  justify-self: start;
+  height: 30px;
+  /* position: relative;
     z-index: 101; */
-  }
-  
+}
 
-.languages a{
-    margin-right: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    
-  }
-  
-  .languages a:last-child{
-    margin-bottom: 5px;
-    
-  }
-  
-  
-  /* Navbar Sart */
-  .navbar {
-    width: 100%;
-    height: 60px;
-    padding: 0 30px;
-    background-color: white;
-    position: sticky;
-    top: -0.15px;
-    z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    user-select: none;
-  
-  }
+.languages a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-  .navbar > a {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navbar ul {
-    list-style: none;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    
-  }
-  
-  .navbar > .navOpenBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    margin-right: 15px;
-    display: none;
-    color: black;
-  }
+.languages a:last-child {
+  margin-bottom: 5px;
+}
 
-  .navbar-items{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+/* Navbar Sart */
+.navbar {
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  background-color: white;
+  position: sticky;
+  top: -0.15px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
 
-  .navbar-items > li:not(:has( > a)), .vertical-navbar > li:not(:has( > a)){
-    position: relative;
-  }
+.navbar > a {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .navbar ul li a,
-  .navbar ul li:not(:has( > a)) div {
-    font-size: 18px;
-    color: black;
-    display: block;
-    user-select: none;
-  }
+.navbar ul {
+  list-style: none;
+}
 
-  
-  .navbar ul li a{
-    transition: background-color 0.1s ease-in-out;
-  }
+.navbar ul li a {
+  text-decoration: none;
+}
 
+.navbar > .navOpenBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin-right: 15px;
+  display: none;
+  color: black;
+}
 
-.navbar-items > li > div > p{
+.navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-items > li:not(:has(> a)),
+.vertical-navbar > li:not(:has(> a)) {
+  position: relative;
+}
+
+.navbar ul li a,
+.navbar ul li:not(:has(> a)) div {
+  font-size: 18px;
+  color: black;
+  display: block;
+  user-select: none;
+}
+
+.navbar ul li a {
+  transition: background-color 0.1s ease-in-out;
+}
+
+.navbar-items > li > div > p {
   width: 140px;
   text-align: center;
   display: flex;
@@ -133,260 +123,244 @@
   transition: background-color 0.1s ease-in-out;
 }
 
-.navbar-items > li > div > p > i{
+.navbar-items > li > div > p > i {
   margin-right: 8px;
   transition: transform 0.2s ease-in-out;
   transform-origin: center;
 }
 
-.navbar-items > li:has(div):hover > div > p > i{
+.navbar-items > li:has(div):hover > div > p > i {
   transform: rotate(-90deg);
 }
 
-
-.navbar-items > li{
+.navbar-items > li {
   margin: 0 5px;
 }
 
 .navbar-items > li > a,
-.navbar-items > li > div > p{
-    padding: 12px;
-    border-radius: 5px;
-  }
-
-
- 
-.navbar-items > li > div{
-    margin: 5px 0;
+.navbar-items > li > div > p {
+  padding: 12px;
+  border-radius: 5px;
 }
-  .vertical-navbar > li a, .vertical-navbar div{
-    padding: 15px;
-    border-radius: 5px;
+
+.navbar-items > li > div {
+  margin: 5px 0;
+}
+.vertical-navbar > li a,
+.vertical-navbar div {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.vertical-navbar li:not(:has(> a)) div,
+.navbar-items > li:not(:has(> a)) > div > p {
+  cursor: pointer;
+}
+
+.navbar-items > li > a:hover,
+.navbar-items > li > div:hover p,
+.vertical-navbar li div:hover,
+.vertical-navbar ul li a:hover,
+.vertical-navbar li:hover div,
+.navbar-items > li:has(div):hover > div > p {
+  background-color: #f5f6f7;
+}
+
+.vertical-navbar > li > div > i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 18px;
+  transform: translateY(-50%);
+}
+
+.vertical-navbar,
+.vertical-navbar-items {
+  position: absolute;
+  width: 130px;
+  background: #ffffff;
+  display: none;
+  z-index: 5;
+  text-align: center;
+}
+
+.vertical-navbar-items {
+  width: 150px;
+  left: -150px;
+  top: -5px;
+}
+
+.vertical-navbar > li > div,
+.vertical-navbar-items li > a {
+  margin: 5px;
+}
+
+.navbar-items > li:not(:has(> a)):hover > .vertical-navbar,
+.vertical-navbar > li:has(> div):hover > ul {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 5px 30px;
   }
-
-  
-  .vertical-navbar li:not(:has( > a)) div, .navbar-items > li:not(:has( > a)) > div > p {
-    cursor: pointer;
-  }
-
-  .navbar-items > li > a:hover, 
-  .navbar-items > li > div:hover p,
-  .vertical-navbar li div:hover, 
-  .vertical-navbar ul li a:hover,  
-  .vertical-navbar li:hover div, 
-  .navbar-items > li:has(div):hover > div > p{
-    background-color: #F5F6F7;
-  }
-
-
-  .vertical-navbar > li > div > i{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    font-size: 18px;
-    transform: translateY(-50%);
-
-  }
-
-  .vertical-navbar, .vertical-navbar-items{
-    position: absolute;
-    width: 130px;
-    background: #ffffff;
-    display: none;
-    z-index: 5;
-    text-align: center;
-  }
-
-  .vertical-navbar-items{
-    width: 150px;
-    left: -150px;
-    top: -5px;
-  }
-
-  .vertical-navbar > li > div, .vertical-navbar-items li > a{
-    margin: 5px;
-  }
-
-  
-  .navbar-items > li:not(:has( > a)):hover > .vertical-navbar, .vertical-navbar > li:has( > div):hover > ul{
+  .navbar .navOpenBtn {
     display: block;
   }
 
-
-
-
-  @media screen and (max-width: 768px) {
-    .navbar {
-      padding: 5px 30px;
-    }
-    .navbar .navOpenBtn {
-      display: block;
-    }
-  
-    .btn-close-box {
-      display: block;
-    }
-  
-    .navbar .navbar-items {
-      display: none;
-    }
-  }
-  /* Navbar End */
-
-
-
-  
-  /* Siderbar Start */
-  
-  .sidebar{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 2;
-    width: 300px;
-    height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background-color: #FFFFFF;
-    display: none;
-  }
-  .sidebar-profile{
-    height: 150px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid lightgray;
-  
-  }
-  
-  .sidebar-profile i{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: gray;
-    cursor: pointer;
-  }
-  
-  .sidebar-profile img{
-    height: 100px;
-  }
-  
-  .sidebar-content{
-    width: 100%;
-    height: calc( 100% - 150px);
-    overflow-y: auto;
-    padding-top: 20px; 
-  
-  }
-  
-  .sidebar-content ul{
-    list-style: none;
-  }
-  
-  .sidebar-content ul li a{
-    text-decoration: none;
-    display: block;
-    color: black;
-  }
-  
-  .menu-item > a, .menu-item > div{
-  
-    padding: 15px;
-    width: 90%;
-    margin: 10px auto;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #D3D3D3;
-  }
-  
-  
-  
-  .menu-item > div{
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-  }
-  
-  .menu-item > div > i{
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-  }
-  
-  .sub-menu{
-    display: none;
-    user-select: none;
-  }
-  
-  .sub-menu-item .province{
-    padding: 12px 50px;
-    width: 90%;
-    margin: 10px auto;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #EEEEEE;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .province i{
-    transition: transform 0.2s ease-in-out;
-    transform-origin: center;
-  }
-  
-  .districts{
-    display: none;
-  }
-  .district a{
-    padding: 8px;
-    width: 90%;
-    margin: 5px auto;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #EEEEEE;
-    user-select: none;
-  }
-  
-  
-  .turn-angle{
-    transform: rotate(-90deg);
-  }
-  
-  .menu-item > a:hover, .menu-item > div:hover, .sub-menu-item .province:hover, .district a:hover{
-    background-color: #4EC6DE;
-    color: white;
-  }
-  
-  
-  .overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    background-color: #6d6d6d56;
-    display: none;
-  }
-  
-  .show-menu,.show-overlay{
+  .btn-close-box {
     display: block;
   }
-  
-  
-  
-  
-  @media only screen and (min-width : 768px){
-    .show-menu,.show-overlay{
-      display: none;
-    }
-  
+
+  .navbar .navbar-items {
+    display: none;
   }
-  
-  
-  
+}
+/* Navbar End */
+
+/* Siderbar Start */
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 300px;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #ffffff;
+  display: none;
+}
+.sidebar-profile {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.sidebar-profile i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.sidebar-profile img {
+  height: 100px;
+}
+
+.sidebar-content {
+  width: 100%;
+  height: calc(100% - 150px);
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+.sidebar-content ul {
+  list-style: none;
+}
+
+.sidebar-content ul li a {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.menu-item > a,
+.menu-item > div {
+  padding: 15px;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #d3d3d3;
+}
+
+.menu-item > div {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.menu-item > div > i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.sub-menu {
+  display: none;
+  user-select: none;
+}
+
+.sub-menu-item .province {
+  padding: 12px 50px;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.province i {
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center;
+}
+
+.districts {
+  display: none;
+}
+.district a {
+  padding: 8px;
+  width: 90%;
+  margin: 5px auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  user-select: none;
+}
+
+.turn-angle {
+  transform: rotate(-90deg);
+}
+
+.menu-item > a:hover,
+.menu-item > div:hover,
+.sub-menu-item .province:hover,
+.district a:hover {
+  background-color: #4ec6de;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: #6d6d6d56;
+  display: none;
+}
+
+.show-menu,
+.show-overlay {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .show-menu,
+  .show-overlay {
+    display: none;
+  }
+}
