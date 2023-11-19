@@ -10,6 +10,11 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/footer.css">
 	<link rel="stylesheet" href="assets/FontAwesome.Pro.6.4.2/css/all.css" />
+	<script>
+		window.onload = function () {
+			document.body.style.visibility = "visible";
+		};
+	</script>
 </head>
 
 <body>
@@ -79,7 +84,7 @@
 				</ul>
 			</li>
 			<li><a class="section-links" href="#services">خدمات ما</a></li>
-			<li><a class="section-links" href="#home">صفحه اصلی</a></li>
+			<li><a class="section-links active" href="#home">صفحه اصلی</a></li>
 
 		</ul>
 	</nav>
@@ -515,23 +520,25 @@
 
 
 
-	
-window.onload = () => {
-
-	document.body.style.visibility = "visible";
-
-    const links = document.querySelectorAll(".section-links");
+const links = document.querySelectorAll(".section-links");
   
-    links.forEach(link => {
+  links.forEach((link) => {
+	  link.addEventListener("click", (e) =>{
+		  e.preventDefault();
+		  links.forEach(link => {
+                if(link.classList.contains("active")){
+                    link.classList.remove("active");
+                };
+            });
 
-        link.addEventListener("click", (e) =>{
-            e.preventDefault();
-            document.querySelector(e.target.hash).scrollIntoView({
-                behavior: "smooth"
-            })
-        });
-    })
-}
+		  link.classList.add("active");
+		  document.querySelector(e.target.hash).scrollIntoView({
+			  behavior: "smooth"
+		  })
+	  });
+  })
+
+
 
 </script>
 

@@ -156,7 +156,7 @@ body {
 .navbar-items > li:not(:has(> a)) > div > p {
   cursor: pointer;
 }
-
+.navbar-items > li:has(> a) .active,
 .navbar-items > li > a:hover,
 .navbar-items > li > div:hover p,
 .vertical-navbar li div:hover,
