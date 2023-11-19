@@ -19,7 +19,7 @@
 
 <body>
 
-	<div class="languages" id="home">
+	<div class="languages section" id="home">
 		<a href="">English</a>
 		<a href="">دری</a>
 	</div>
@@ -194,7 +194,7 @@
 		<!-- /onclick js -->
 	</div>
 
-	<div class="service" id="services">
+	<div class="service section" id="services">
 		<div class="service-title">
 			<h1>خدمات ما</h1>
 		</div>
@@ -289,7 +289,7 @@
 	</div>
 
 
-	<div class="about_us"  id="aboutUs">
+	<div class="about_us section"  id="aboutUs">
 		<h1>در باره ما</h1>
 		<div class="tabs">
 			<input type="radio" name="slider" id="history" checked>
@@ -428,7 +428,7 @@
 	</div>
 
 
-	<div class="proposal" id="offer">
+	<div class="proposal section" id="offer">
 		<div class="proposal-title">
 			<h1>ارتباط با ما</h1>
 		</div>
@@ -525,18 +525,58 @@ const links = document.querySelectorAll(".section-links");
   links.forEach((link) => {
 	  link.addEventListener("click", (e) =>{
 		  e.preventDefault();
-		  links.forEach(link => {
-                if(link.classList.contains("active")){
-                    link.classList.remove("active");
-                };
-            });
+		//   links.forEach(link => {
+        //         if(link.classList.contains("active")){
+        //             link.classList.remove("active");
+        //         };
+        //     });
 
-		  link.classList.add("active");
+		//   link.classList.add("active");
 		  document.querySelector(e.target.hash).scrollIntoView({
 			  behavior: "smooth"
 		  })
 	  });
   })
+
+
+let sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach((section, index) => {
+        let sectionTop = section.offsetTop;
+		if(index == 0){
+			if (scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+        	}
+		}
+
+		if(index == 1){
+			if (scrollY >= sectionTop - 60) {
+            current = section.getAttribute('id');
+        	}
+		}
+		if(index == 2){
+			if (scrollY >= sectionTop - 110) {
+            current = section.getAttribute('id');
+        	}
+		}
+		if(index == 3){
+			if (scrollY >= sectionTop - 120) {
+            current = section.getAttribute('id');
+        	}
+		}
+    });
+
+	links.forEach(link => {
+                if(link.classList.contains("active")){
+                    link.classList.remove("active");
+                };
+				document.querySelector('.navbar-items > li:has( > a) a[href*= ' + current + ']').classList.add('active');
+				
+    });
+  
+});
 
 
 
