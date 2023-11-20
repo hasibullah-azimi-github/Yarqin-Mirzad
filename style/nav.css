@@ -335,6 +335,7 @@ body {
 .menu-item > a:hover,
 .menu-item > div:hover,
 .sub-menu-item .province:hover,
+.menu-item > a.active,
 .district a:hover {
   background-color: #4ec6de;
   color: white;
