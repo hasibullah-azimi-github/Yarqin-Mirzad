@@ -153,6 +153,7 @@ body {
   cursor: pointer;
 }
 
+.navbar-items > li:has(> a) .active,
 .navbar-items > li > a:hover,
 .navbar-items > li > div:hover p,
 .vertical-navbar li div:hover,
@@ -161,10 +162,8 @@ body {
 .navbar-items > li:has(div):hover > div > p {
   background-color: #f5f6f7;
 }
-.navbar-items > li:has(> a) .active{
-  background-color:  #98CA3D;
-  color: white;
-}
+
+
 .vertical-navbar > li > div > i {
   position: absolute;
   top: 50%;

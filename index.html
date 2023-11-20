@@ -539,9 +539,12 @@ const links = document.querySelectorAll(".section-links");
   })
 
 
+
 let sections = document.querySelectorAll('.section');
+let current = '';
+
 window.addEventListener('scroll', () => {
-    let current = '';
+    
     sections.forEach((section, index) => {
         let sectionTop = section.offsetTop;
 		if(index == 0){
@@ -567,12 +570,17 @@ window.addEventListener('scroll', () => {
 		}
     });
 
-	links.forEach(link => {
+	if(!document.querySelector('.navbar-items > li:has( > a) a[href*= ' + current + ']').classList.contains('active')){
+		links.forEach(link => {
                 if(link.classList.contains("active")){
                     link.classList.remove("active");
                 };
 				document.querySelector('.navbar-items > li:has( > a) a[href*= ' + current + ']').classList.add('active');
     });
+
+	}
+
+	
   
 });
 
