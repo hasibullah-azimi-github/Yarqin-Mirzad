@@ -348,6 +348,12 @@
   }
 }
 
+@media screen and (max-width: 720px){
+  .service-cards .service-item {
+    width: 280px;
+  }
+  
+}
 
 
 
@@ -435,4 +441,22 @@
 
 .company-container img{
   width: 180px;
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 720px){
+
+  .proposal-detail{
+    padding: 0 20px;
+  }
+  .company-container{
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .company-container img{
+    margin: 10px 0;
+  }
+  
 }

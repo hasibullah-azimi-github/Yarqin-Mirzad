@@ -6,7 +6,7 @@
     padding: 30px;
     background-color: #F9FAFE;
     direction: rtl;
-    border-top: 1px solid rgb(238, 236, 236);
+
     
   }
   
@@ -81,4 +81,30 @@
   }
   .left-area ul li:last-child a i{
     color: #ff0000;
+  }
+
+
+  @media screen and (max-width: 720px){
+
+    
+    .footer{
+      padding: 30px 10px;
+
+    }
+
+    .communication{
+      flex-direction: column;
+      row-gap: 20px; 
+    }
+    .communication .right-area, .communication .left-area{
+      width: 100%;
+      padding: 0px;
+    }
+
+    .left-area ul{
+      grid-template-columns: repeat(1, 1fr);
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
   }
