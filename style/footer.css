@@ -84,9 +84,8 @@
   }
 
 
-  @media screen and (max-width: 720px){
+  @media screen and (max-width: 768px){
 
-    
     .footer{
       padding: 30px 10px;
 
@@ -104,6 +103,7 @@
     .left-area ul{
       grid-template-columns: repeat(1, 1fr);
       width: 80%;
+      gap: 30px 10px;
       margin: 0 auto;
       margin-top: 25px;
     }
