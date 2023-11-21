@@ -139,10 +139,6 @@
 }
 
 
-
-
-
-
 .content_box{
   padding: 20px;
 }
@@ -346,13 +342,6 @@
   .service-cards {
     grid-template-columns: repeat(auto-fit, 255px);
   }
-}
-
-@media screen and (max-width: 720px){
-  .service-cards .service-item {
-    width: 280px;
-  }
-  
 }
 
 
