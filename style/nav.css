@@ -97,6 +97,27 @@ body {
   justify-content: center;
 }
 
+.vertical-navbar{
+  width: 140px;
+}
+
+.vertical-navbar,
+.vertical-navbar-items {
+  position: absolute;
+  background: #ffffff;
+  display: none;
+  z-index: 5;
+  text-align: center;
+  border: 1px solid rgb(247, 246, 246);
+  border-radius: 5px;
+}
+
+.vertical-navbar-items {
+  width: 150px;
+  left: -150px;
+  top: -5px;
+}
+
 .navbar-items > li:not(:has(> a)),
 .vertical-navbar > li:not(:has(> a)) {
   position: relative;
@@ -172,23 +193,7 @@ body {
   transform: translateY(-50%);
 }
 
-.vertical-navbar,
-.vertical-navbar-items {
-  position: absolute;
-  width: 130px;
-  background: #ffffff;
-  display: none;
-  z-index: 5;
-  text-align: center;
-  border: 1px solid rgb(247, 246, 246);
-  border-radius: 5px;
-}
 
-.vertical-navbar-items {
-  width: 150px;
-  left: -150px;
-  top: -5px;
-}
 
 .vertical-navbar > li > div,
 .vertical-navbar-items li > a {
