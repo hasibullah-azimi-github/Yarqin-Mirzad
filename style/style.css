@@ -251,96 +251,122 @@
 .service {
   max-width: 1400px;
   width: 100%;
-  margin: 10px auto;
+  margin: 0 auto;
   scroll-margin-top: 50px; 
   /* background-color: #4ec6de; */
-  background-color: #FCFCFD;
+  /* background-color: #FCFCFD; */
 }
 
-.service .service-title h1 {
+
+.service .service-title{
   text-align: center;
-  padding-top: 10px;
-  padding: 65px 0;
+  padding: 80px 0;
+  /* background-color: rebeccapurple; */
 }
 
-.service-cards {
+.service-items {
   display: grid;
   grid-template-columns: repeat(3, 255px);
   gap: 80px 75px;
-  /* background-color: #4ec6de; */
+  padding: 20px 0;
+  margin-top: 10px;
   place-items: center;
   place-content: center;
 }
 
-.service-cards .service-item {
-  position: relative;
+.service-card {
   width: 250px;
-  height: 290px;
-  margin: 5px;
-  border-radius: 2px;
-  border: 1px solid rgb(247, 247, 247);
-  text-align: center;
-  padding: 20px;
-  direction: rtl;
-  padding-top: 80px;
-  border-radius: 15px;
+  height: 300px;
   background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 55px;
+  position: relative;
+  direction: rtl;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-
 }
 
-
-
-
-.service-item .service-icon {
-  margin: 0 auto;
-  color:#4ec6de;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  font-size: 50px;
-  margin-bottom: 15px;
-}
-
-.service-item .service-item-title {
-  background-image: url('/Yarqin-Mirzad/assets/Icons/service-card-icon-1.svg');
-  /* background-image: url('/assets/Icons/service-card-icon-1.svg'); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  width: 180px;
-  height: 75px;
-  position: absolute;
-  top: -23px;
-  left: 50%;
-  transform: translate(-50%, 0);
+.service-card-top-shape {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 130px;
+  height: 75px;
+  font-size: 22px;
   color: white;
-  
-  /* background-color: #4ec6de; */
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #98CA3D;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
 }
 
-.service-item  .service-item-footer{
-  background-image: url('/Yarqin-Mirzad/assets/Icons/service-card-icon-2.svg');
-    /* background-image: url('/assets/Icons/service-card-icon-2.svg'); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 11px;
+.service-card-top-shape h4{
+  font-size: 18px;
+}
+
+
+.service-card-top-right-shape,
+.service-card-top-left-shape {
+  width: 30px; /* Add a fixed width */
+  height: 30px; /* Add a fixed height */
+}
+
+.service-card-top-right-shape {
   position: absolute;
-  bottom: -3px;
+  top: 0;
+  right: -30px;
+  border-top: 30px solid transparent;
+  border-left: 30px solid #698734;
+
+
+}
+
+.service-card-top-left-shape {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  border-top: 30px solid transparent;
+  border-right: 30px solid #698734;
+
+}
+
+.service-card-bottom-shape {
+  width: 100px;
+  height: 10px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
-.service-item .service-description p {
+.service-card-bottom-shape-inner {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #4ec6de;
+}
+
+
+.service-card .service-icon {
+  margin: 0 auto;
+  color: #4ec6de;
+  font-size: 60px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+.service-item .service-description{
   font-size: 15px;
 }
 
 @media screen and (max-width: 992px) {
-  .service-cards {
+  .service-items {
     grid-template-columns: repeat(auto-fit, 255px);
   }
 }
@@ -425,7 +451,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 30px;
+  padding: 100px 30px;
 
 }
 
