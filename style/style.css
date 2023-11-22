@@ -253,6 +253,7 @@
   width: 100%;
   margin: 0 auto;
   scroll-margin-top: 50px; 
+  direction: rtl;
   /* background-color: #4ec6de; */
   /* background-color: #FCFCFD; */
 }
@@ -267,7 +268,7 @@
 .service-items {
   display: grid;
   grid-template-columns: repeat(3, 255px);
-  gap: 80px 75px;
+  gap: 90px 75px;
   padding: 20px 0;
   margin-top: 10px;
   place-items: center;
@@ -282,7 +283,6 @@
   text-align: center;
   padding-top: 55px;
   position: relative;
-  direction: rtl;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
