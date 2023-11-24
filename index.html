@@ -436,61 +436,6 @@
 
 
 
-		const links = document.querySelectorAll(".section-links");
-
-		links.forEach((link) => {
-			link.addEventListener("click", (e) => {
-				e.preventDefault();
-				document.querySelector(e.target.hash).scrollIntoView({
-					behavior: "smooth"
-				})
-			});
-		})
-
-
-
-
-
-		const sections = document.querySelectorAll('.section');
-		let current = '';
-		let activeTagStatus = true;
-
-		function setActiveLink() {
-
-
-			const activeNavbarLink = document.querySelector(`.navbar-items > li:has( > a) > a[href*='${current}']`);
-			const activeSidbarLink = document.querySelector(`.menu > .menu-item > a[href*='${current}']`);
-
-			if (!activeNavbarLink.classList.contains('active') && !activeSidbarLink.classList.contains('active')) {
-				links.forEach(link => {
-					link.classList.remove("active");
-				});
-				activeNavbarLink.classList.add('active');
-				activeSidbarLink.classList.add('active');
-			}
-
-		}
-
-		function updateCurrentSection() {
-			sections.forEach((section, index) => {
-				const sectionTop = section.offsetTop;
-				if (index === 0 && scrollY >= sectionTop) {
-					current = section.getAttribute('id');
-				} else if (index === 1 && scrollY >= sectionTop - 60) {
-					current = section.getAttribute('id');
-				} else if (index === 2 && scrollY >= sectionTop - 110) {
-					current = section.getAttribute('id');
-				} else if (index === 3 && scrollY >= sectionTop - 120) {
-					current = section.getAttribute('id');
-				}
-			});
-			setActiveLink();
-		}
-
-		window.addEventListener('scroll', updateCurrentSection);
-
-
-
 
 		let service_items = [
 
@@ -525,34 +470,91 @@
 				icon: "fa-fingerprint",
 				description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
 			},
-			
-			
+
+
 		];
 
 
 		for (let i = 0; i < service_items.length; i++) {
 
 			document.querySelector(".service-items").innerHTML += `
-		<div class="service-card">
-				<div class="service-card-top-shape">
-					<div class="service-card-top-inner-shape">
-						<div class="service-card-top-right-shape"></div>
-						<div class="service-card-top-left-shape"></div>
-						${service_items[i].title}
-					</div>
-				</div>
-				<div class="service-icon">
-					<i class="fa-solid ${service_items[i].icon}"></i>
-				</div>
-				<div class="service-description">
-					<p>${service_items[i].description}</p>
-				</div>
-				<div class="service-card-bottom-shape">
-					<div class="service-card-bottom-shape-inner"></div>
-				</div>
-			</div>
-		`;
+						<div class="service-card">
+							<div class="service-card-top-shape">
+								<div class="service-card-top-inner-shape">
+									<div class="service-card-top-right-shape"></div>
+									<div class="service-card-top-left-shape"></div>
+									${service_items[i].title}
+								</div>
+							</div>
+							<div class="service-icon">
+								<i class="fa-solid ${service_items[i].icon}"></i>
+							</div>
+							<div class="service-description">
+								<p>${service_items[i].description}</p>
+							</div>
+							<div class="service-card-bottom-shape">
+								<div class="service-card-bottom-shape-inner"></div>
+							</div>
+						</div>
+						`;
 		}
+
+
+
+
+		const links = document.querySelectorAll(".section-links");
+
+		links.forEach((link) => {
+			link.addEventListener("click", (e) => {
+				e.preventDefault();
+				document.querySelector(e.target.hash).scrollIntoView({
+					behavior: "smooth"
+				})
+			});
+		})
+
+
+
+
+
+		const sections = document.querySelectorAll('.section');
+		let current = '';
+		let activeTagStatus = true;
+
+		function setActiveLink() {
+
+			const activeNavbarLink = document.querySelector(`.navbar-items > li:has( > a) > a[href*='${current}']`);
+			const activeSidbarLink = document.querySelector(`.menu > .menu-item > a[href*='${current}']`);
+
+			if (!activeNavbarLink.classList.contains('active') && !activeSidbarLink.classList.contains('active')) {
+			
+				links.forEach(link => {
+					link.classList.remove("active");
+				});
+				activeNavbarLink.classList.add('active');
+				activeSidbarLink.classList.add('active');
+			}
+
+		}
+
+		function updateCurrentSection() {
+			sections.forEach((section, index) => {
+				const sectionTop = section.offsetTop;
+				if (index === 0 && scrollY >= sectionTop) {
+					current = section.getAttribute('id');
+				} else if (index === 1 && scrollY >= sectionTop - 60) {
+					current = section.getAttribute('id');
+				} else if (index === 2 && scrollY >= sectionTop - 110) {
+					current = section.getAttribute('id');
+				} else if (index === 3 && scrollY >= sectionTop - 120) {
+					current = section.getAttribute('id');
+				}
+			});
+			setActiveLink();
+		}
+
+		window.addEventListener('scroll', updateCurrentSection);
+
 
 
 
