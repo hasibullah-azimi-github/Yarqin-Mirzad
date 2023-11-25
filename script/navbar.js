@@ -34,15 +34,15 @@ function clickOutside(e) {
 }
 
 
-let navbar_menu = document.querySelectorAll(".menu-item  .section-links");
+// let navbar_menu = document.querySelectorAll(".menu-item  .section-links");
 
-// Function to close modal if menu click
-navbar_menu.forEach((menu) => {
-  menu.addEventListener("click", (e) => {
-    bodyElement.style.overflow = 'auto';
-    modal.classList.toggle("toggleshow");
-  });
-});
+// // Function to close modal if menu click
+// navbar_menu.forEach((menu) => {
+//   menu.addEventListener("click", (e) => {
+//     bodyElement.style.overflow = 'auto';
+//     modal.classList.toggle("toggleshow");
+//   });
+// });
 
 
 // Function to close modal if sidebar remained open
