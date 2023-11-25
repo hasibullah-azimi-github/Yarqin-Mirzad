@@ -244,6 +244,7 @@ body {
   height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: #ffffff;
+  user-select: none;
 }
 .sidebar-profile {
   height: 150px;
