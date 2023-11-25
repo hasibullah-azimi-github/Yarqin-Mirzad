@@ -23,7 +23,7 @@
 }
 
 body {
-background-color: #FCFCFD;
+  background-color: #FCFCFD;
   visibility: hidden;
 }
 
@@ -225,16 +225,25 @@ background-color: #FCFCFD;
 
 /* Siderbar Start */
 
-.sidebar {
+.sidebar-modal{
+  display: none;
   position: fixed;
-  right: 0;
+  z-index: 10;
+  left: 0;
   top: 0;
-  z-index: 2;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+  position: absolute;
+  right: 0;
   width: 300px;
   height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: #ffffff;
-  display: none;
 }
 .sidebar-profile {
   height: 150px;
@@ -359,14 +368,12 @@ background-color: #FCFCFD;
   display: none;
 }
 
-.show-menu,
-.show-overlay {
+.toggleshow{
   display: block;
 }
 
 @media only screen and (min-width: 768px) {
-  .show-menu,
-  .show-overlay {
+  .toggleshow{
     display: none;
   }
 }
