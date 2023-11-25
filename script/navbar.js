@@ -1,23 +1,20 @@
-// Get body element
-const bodyElement = document.body;
+
 
 // Get modal element
 let modal = document.querySelector(".sidebar-modal");
 
 // Get open buttons
-const sidebarbtnOpen = document.querySelector(".navOpenBtn");
+const sidebarOpenbtn = document.querySelector(".navOpenBtn");
 
 // Get close button
-const sidebarbtnClose = document.querySelector(".navCloseBtn");
+const sidebarClosebtn = document.querySelector(".navCloseBtn");
 
 // Listen for open click
-sidebarbtnOpen.addEventListener("click", () => {
- // bodyElement.style.overflow = 'hidden';
+sidebarOpenbtn.addEventListener("click", () => {
   modal.classList.toggle("toggleshow");
 });
 
-sidebarbtnClose.addEventListener("click", () => {
-  bodyElement.style.overflow = 'auto';
+sidebarClosebtn.addEventListener("click", () => {
   modal.classList.toggle("toggleshow");
 });
 
@@ -28,7 +25,6 @@ window.addEventListener("click", clickOutside);
 // Function to close modal if outside click
 function clickOutside(e) {
   if (e.target == modal) {
-   // bodyElement.style.overflow = 'auto';
     modal.classList.toggle("toggleshow");
   }
 }
@@ -39,7 +35,6 @@ let navbar_menu = document.querySelectorAll(".menu-item  .section-links");
 // Function to close modal if menu click
 navbar_menu.forEach((menu) => {
   menu.addEventListener("click", (e) => {
-   // bodyElement.style.overflow = 'auto';//
     modal.classList.toggle("toggleshow");
   });
 });
@@ -49,7 +44,6 @@ navbar_menu.forEach((menu) => {
 window.matchMedia("(max-width: 768px)").addEventListener("change", (viewPort) => {
     if (!viewPort.matches) {
       if (modal.classList.contains("toggleshow")) {
-      //  bodyElement.style.overflow = 'auto';
         modal.classList.toggle("toggleshow");
       }
     }
