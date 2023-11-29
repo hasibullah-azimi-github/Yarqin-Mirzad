@@ -25,7 +25,10 @@
 body {
   background-color: #FCFCFD;
   visibility: hidden;
+
 }
+
+
 
 .languages {
   background-color: #4ec6de;
@@ -89,6 +92,10 @@ body {
   margin-right: 15px;
   display: none;
   color: black;
+}
+
+.navOpenBtn:hover, .navCloseBtn:hover{
+  cursor: pointer;
 }
 
 .navbar-items {
@@ -235,6 +242,7 @@ body {
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
+  overscroll-behavior: contain;
 }
 
 .sidebar {
@@ -261,7 +269,6 @@ body {
   top: 10px;
   left: 10px;
   color: gray;
-  cursor: pointer;
 }
 
 .sidebar-profile img {
@@ -273,6 +280,8 @@ body {
   height: calc(100% - 150px);
   overflow-y: auto;
   padding-top: 20px;
+  overscroll-behavior: contain;
+
 }
 
 .sidebar-content ul {
@@ -368,6 +377,7 @@ body {
   background-color: #6d6d6d56;
   display: none;
 }
+
 
 .toggleshow{
   display: block;
