@@ -10,26 +10,30 @@ const sidebarOpenbtn = document.querySelector(".navOpenBtn");
 const sidebarClosebtn = document.querySelector(".navCloseBtn");
 
 
-let isWindowScrollable = false;
+let isBodyScrollable = true;
 let scrollPosition;
 
 // Listen for open click
 sidebarOpenbtn.addEventListener("click", () => {
   scrollPosition = window.scrollY || document.documentElement.scrollTop;
-  isWindowScrollable = true;
+  isBodyScrollable = false;
+  document.body.classList.toggle('hide-scrollbar');
   modal.classList.toggle("toggleshow");
 
 });
 
 sidebarClosebtn.addEventListener("click", () => {
-  isWindowScrollable = false;
+  document.body.classList.toggle('hide-scrollbar');
+  isBodyScrollable = true;
   modal.classList.toggle("toggleshow");
 
-});
+}); 
+
+
 
 const handleScroll = (event) => {
 
-  if (isWindowScrollable) {
+  if (!isBodyScrollable) {
     event.preventDefault();
     window.scrollTo(0, scrollPosition);
   }
@@ -45,7 +49,8 @@ window.addEventListener("click", OutsideClicked);
 // Function to close modal if outside click
 function OutsideClicked(e) {
   if (e.target == modal) {
-    isWindowScrollable = false;
+    document.body.classList.toggle('hide-scrollbar');
+    isBodyScrollable = true;
     modal.classList.toggle("toggleshow");
   }
 }
@@ -56,7 +61,8 @@ let navbar_menu = document.querySelectorAll(".menu-item  .section-links");
 // Function to close modal if menu click
 navbar_menu.forEach((menu) => {
   menu.addEventListener("click", (e) => {
-    isWindowScrollable = false;
+    document.body.classList.toggle('hide-scrollbar');
+    isBodyScrollable = true;
     modal.classList.toggle("toggleshow");
   });
 });
@@ -66,7 +72,8 @@ navbar_menu.forEach((menu) => {
 window.matchMedia("(max-width: 768px)").addEventListener("change", (viewPort) => {
     if (!viewPort.matches) {
       if (modal.classList.contains("toggleshow")) {
-        isWindowScrollable = false;
+        document.body.classList.toggle('hide-scrollbar');
+        isBodyScrollable = true;
         modal.classList.toggle("toggleshow");
       }
     }
