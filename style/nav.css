@@ -24,7 +24,8 @@
 
 body {
   background-color: #FCFCFD;
-  visibility: hidden;
+  /* visibility: hidden; */
+  overflow: hidden; /* Prevent scrolling while loading */
 
 }
 
