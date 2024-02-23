@@ -9,6 +9,10 @@
   src: url("../assets/fonts/iransans/Sans\ a4fran3.woff") format("woff");
 }
 
+
+
+
+
 /* 
     #4EC6DE
   
@@ -91,6 +95,7 @@ body {
   transform: translateY(-50%);
   right: 0;
   margin-right: 15px;
+  font-size: 35px;
   display: none;
   color: black;
 }
@@ -274,10 +279,11 @@ body {
   border-bottom: 1px solid lightgray;
 }
 
-.sidebar-profile i {
+.sidebar-profile span {
   position: absolute;
-  top: 6px;
-  left: 10px;
+  font-size: 35px;
+  top: 2px;
+  left: 7px;
   color: gray;
 }
 
