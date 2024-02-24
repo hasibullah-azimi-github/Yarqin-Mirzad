@@ -1,110 +1,115 @@
+.footer {
+  width: 100%;
+  padding: 30px;
+  background-color: #f9fafe;
+  direction: rtl;
+}
+
+.communication {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.communication .right-area {
+  width: 50%;
+  padding: 20px;
+}
+
+.communication .right-area div {
+  padding: 15px 0;
+}
+
+.footer .left-area {
+  width: 50%;
+  padding: 20px;
+}
+
+.left-area h3{
+  margin-bottom: 20px;
+}
 
 
+.left-area ul {
+  list-style-type: none;
+}
 
-.footer{
+.left-area ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.left-area ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffff;
+  text-decoration: none;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+}
+
+.left-area ul li a i {
+  font-size: 25px;
+  color: black;
+}
+
+.left-area ul li:first-child a i {
+  color: #1877f2;
+}
+
+.left-area ul li:nth-child(2) a i {
+  color: #25d366;
+}
+
+.left-area ul li:nth-child(3) a i {
+  color: #c32aa3;
+}
+.left-area ul li:last-child a i {
+  color: #ff0000;
+}
+
+.left-area ul li:nth-child(1) a:hover {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, #1877f2 0px 0px 0px 1px;
+}
+
+.left-area ul li:nth-child(2) a:hover {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, #25d366 0px 0px 0px 1px;
+}
+
+.left-area ul li:nth-child(3) a:hover {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, #c32aa3 0px 0px 0px 1px;
+}
+
+.left-area ul li:nth-child(4) a:hover {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, #ff0000 0px 0px 0px 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer h1 {
+    margin-bottom: 20px;
+  }
+
+  .communication {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .communication .right-area,
+  .communication .left-area {
     width: 100%;
-    padding: 30px;
-    background-color: #F9FAFE;
-    direction: rtl;
-
-    
-  }
-  
-
-
-  .communication{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .communication .right-area{
-    width: 50%;
-    padding: 20px;
-  }
-  
-  .communication .right-area div{
-    padding: 15px 0;
-  }
-  
-  .footer .left-area{
-    width: 50%;
-    padding: 20px;
-  }
-  
-  
-  
-  .left-area ul{
-    list-style-type: none;
-    width: 100%;
-    margin-top: 15px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-  
-  }
-  
-  
-  .left-area ul li a{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ffff;
-    text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-   
-  }
-  
-  .left-area ul li a i{
-    font-size: 25px;
-    color: black;
+    padding: 0px;
   }
 
-  
-  .left-area ul li:first-child a i{
-    color: #1877f2;
+  .left-area ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px 10px;
+    margin: 25px auto;
+    text-align: center;
   }
-  
-    
-  .left-area ul li a:hover{
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(39, 223, 64, 0.514) 0px 0px 0px 1px;
-  }
-
-  .left-area ul li:nth-child(2) a i{
-    color: #25d366;
-  }
-  
-  .left-area ul li:nth-child(3) a i{
-    color: #c32aa3;
-  }
-  .left-area ul li:last-child a i{
-    color: #ff0000;
-  }
-
-
-  @media screen and (max-width: 768px){
-
-    .footer{
-      padding: 30px 10px;
-
-    }
-
-    .communication{
-      flex-direction: column;
-      row-gap: 20px; 
-    }
-    .communication .right-area, .communication .left-area{
-      width: 100%;
-      padding: 0px;
-    }
-
-    .left-area ul{
-      grid-template-columns: repeat(1, 1fr);
-      width: 80%;
-      gap: 30px 10px;
-      margin: 0 auto;
-      margin-top: 25px;
-    }
-  }
+}

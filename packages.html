@@ -7,22 +7,21 @@
     <link rel="stylesheet" href="style/nav.css">
 	<link rel="stylesheet" href="style/package.css">
 	<link rel="stylesheet" href="style/footer.css">
+	<link rel="stylesheet" href="style/loading.css" />
+	<link rel="stylesheet" href="style/icon.css">
     <title>Package</title>
-    <script>
-		window.onload = function () {
-			document.body.style.visibility = "visible";
-		};
-	</script>
 </head>
 <body>
-    
+    <div class="loading-container">
+		<img src="assets/images/loading.gif" alt="" id="icon-loader" class="icon-loader-hidden" draggable="false" />
+	  </div>
 	<div class="languages">
 		<a href="">English</a>
 		<a href="">دری</a>
 	</div>
 	<nav class="navbar">
 		<a href=""><img src="assets/images/logo.png" alt="" class="logo" width="80"></a>
-		<i class="fa-light fa-bars fa-2x navOpenBtn "></i>
+		<span class="navOpenBtn icon-bars"></span>
 		<ul class="navbar-items">
 			<li><a class="section-links" href="index.html#offer">ارتباط با ما</a></li>
 			<li><a class="section-links" href="index.html#aboutUs">درباره ما</a></li>
@@ -88,7 +87,7 @@
 	<div class="sidebar-modal">
 	<nav class="sidebar">
 		<div class="sidebar-profile">
-			<i class="fa-light fa-xmark fa-2x  navCloseBtn"></i>
+			<span class="icon-xmark navCloseBtn"></span>
 			<img src="assets/images/profile.png" alt="">
 		</div>
 
@@ -164,8 +163,8 @@
 
 	<div class="packages">
 		<div class="package-controller tabs">
-			<button class="tab_btn active" type="button">محدود</button>
-			<button class="tab_btn" type="button">نامحدود</button>
+			<button class="tab_btn active" type="button">هاتسپات</button>
+			<button class="tab_btn" type="button">فامیلی</button>
 		</div>
 
 		<div class="content_box">
@@ -428,9 +427,9 @@
 	let package_data = [
 		{
 			packages:{
-				unlimited:[],
-				limited: [],
-				family: []
+				family:[],
+				hotspot: [],
+				business: []
 			},
 			information: {
 
@@ -516,5 +515,26 @@
 
 
 	</script>
+
+<script>
+    //Icon Loader Scripts
+
+    let iconLoader = document.getElementById("icon-loader");
+
+    iconLoader.onload = function () {
+      iconLoader.classList.remove("icon-loader-hidden");
+    };
+
+    if (iconLoader.complete) {
+      iconLoader.onload();
+    }
+
+    window.addEventListener("load", function () {
+      const loadingContainer = document.querySelector(".loading-container");
+      loadingContainer.style.display = "none";
+      document.body.style.overflow = "auto";
+    });
+  </script>
+
 </body>
 </html>
