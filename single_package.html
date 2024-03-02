@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/FontAwesome.Pro.6.4.2/css/all.css" />
+
+    <style>
+      @font-face {
+        font-family: "vazir";
+        src: url("assets/fonts/vazir/Vazir-Medium.woff") format("woff"),
+          url("assets/fonts/vazir/Vazir-Medium.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "iransans";
+        src: url("assets/fonts/iransans/Sans\ a4fran3.woff") format("woff");
+      }
+
+      /* 
+    #4EC6DE
+  
+    #98CA3D
+  */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "vazir";
+      }
+
+      body {
+        margin: 100px;
+      }
+
+      .package {
+        background-color: #fff;
+        margin: 50px 10px;
+        padding-top: 90px;
+        width: 200px;
+        height: 280px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .package-shape {
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .package-shape .package-top-shape-rectangle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 120px;
+        border-radius: 15px;
+        background-color: #4ec6de;
+      }
+
+      .package-top-shape-data h2 {
+        color: white;
+      }
+
+      .package-shape .package-shape-top-triangle {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        left: 50%;
+        bottom: -9px;
+        transform: translateX(-50%);
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 10px solid #4ec6de;
+      }
+
+      .package-bottom-shape {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        background-color: #98ca3d;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: 1px solid gainsboro;
+      }
+
+      .package-data {
+        width: 100%;
+        padding: 0 15px;
+        /* background-color: blueviolet; */
+      }
+
+      .package-data-money,
+      .package-data-duration,
+      .package-data-connectionType,
+      .package-data-speed {
+        direction: rtl;
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+      }
+
+      .package-data-money i,
+      .package-data-duration i,
+      .package-data-connectionType i,
+      .package-data-speed i {
+        font-size: 18px;
+        color: #000000;
+      }
+
+      .package-data-money p,
+      .package-data-duration p,
+      .package-data-connectionType p,
+      .package-data-speed p {
+        margin-right: 15px;
+      }
+
+      .package-data-speed p {
+        direction: ltr;
+      }
+
+      .package-data-night-speed {
+        position: relative;
+      }
+
+      .night-speed-start,
+      .night-speed-end {
+        font-size: 8px;
+        background-color: #4ec6de;
+        color: white;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .night-speed-start {
+        position: absolute;
+        top: -5px;
+        right: 11px;
+      }
+
+      .night-speed-end {
+        position: absolute;
+        top: -5px;
+        right: -11px;
+      }
+
+      /* .night-speed-end span {
+        margin-top: 0.1em;
+      }
+
+      .night-speed-start span {
+        margin-top: 0.1em;
+        margin-right: 0.09em;
+      } */
+
+      .night-speed-line{
+        position: absolute;
+        top: -5px;
+        right: -0.16em;
+        height: 10px;
+        width: 20px;
+        border: solid 1px #000;
+        border-color: #98ca3d transparent transparent transparent;
+        border-radius: 50%/10px 10px 0 0;
+        rotate: -5deg;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="package">
+      <div class="package-shape">
+        <div class="package-top-shape-rectangle">
+          <div class="package-top-shape-data">
+            <h2>100 GB</h2>
+          </div>
+          <div class="package-shape-top-triangle"></div>
+        </div>
+      </div>
+      <div class="package-data">
+        <div class="package-data-money">
+          <i class="fa-regular fa-money-bill"></i>
+          <p>1750 افغانی</p>
+        </div>
+
+        <div class="package-data-duration">
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>یک ماه</p>
+        </div>
+
+        <div class="package-data-speed">
+          <i class="fa-regular fa-gauge"></i>
+          <p>3 MB</p>
+        </div>
+        <div class="package-data-speed package-data-night-speed">
+          <i class="fa-regular fa-moon"></i>
+          <p>رایگان</p>
+          <div class="night-speed-line"></div>
+          <div class="night-speed-start"><span>12</span></div>
+          <div class="night-speed-end"><span>8</span></div>
+        </div>
+        <div class="package-data-connectionType">
+          <i class="fa-solid fa-signal-stream"></i>
+          <p>اختصاصی</p>
+        </div>
+      </div>
+      <div class="package-bottom-shape"></div>
+    </div>
+  </body>
+</html>

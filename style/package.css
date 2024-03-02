@@ -1,3 +1,5 @@
+
+
 .info {
     padding: 50px 50px 0 50px;
     direction: rtl;
@@ -15,7 +17,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
     border-radius: 20px;
 }
 
@@ -42,6 +44,7 @@
     border-radius: 10px;
     cursor: pointer;
     background-color: #eeeeee;
+
 }
 
 .package-controller button.active {
@@ -61,10 +64,28 @@
     display: block;
 }
 
+
+.limit, .unlimited{
+    text-align: center;
+    max-width: 750px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+.limit{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.unlimited{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .package-detail {
     width: 100%;
-    /* background-color: azure; */
-    /* background-color: rebeccapurple; */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -134,33 +155,101 @@
     width: 100%;
     padding: 0 15px;
     /* background-color: blueviolet; */
-}
+  }
 
-.package-data-money,
-.package-data-duration,
-.package-data-connectionType,
-.package-data-speed {
+  .package-data-money,
+  .package-data-duration,
+  .package-data-connectionType,
+  .package-data-speed {
     direction: rtl;
     display: flex;
     align-items: center;
-    margin: 8px 0;
-}
+    margin: 5px 0;
+  }
 
-.package-data-money i,
-.package-data-duration i,
-.package-data-connectionType i,
-.package-data-speed i {
+  .package-data-duration{
+    margin-right: 2px;
+  }
+
+  .package-data-night-speed{
+    margin-top: 8px;
+    margin-right: 3px;
+  }
+
+  .package-data-money i,
+  .package-data-duration i,
+  .package-data-connectionType i,
+  .package-data-speed i {
     font-size: 18px;
     color: #000000;
-}
+  }
 
-.package-data-money p,
-.package-data-duration p,
-.package-data-connectionType p,
-.package-data-speed p {
-    margin-right: 12px;
-}
+  .package-data-duration p,
+  .package-data-connectionType p,
+  .package-data-speed p {
+    margin-right: 15px;
+  }
 
-.package-data-speed p {
+  .package-data-money p{
+    margin-right: 10px;
+  }
+  .package-data-speed p {
     direction: ltr;
-}
+  }
+
+
+.package-data-night-speed {
+    position: relative;
+  }
+
+  .night-speed-start,
+  .night-speed-end {
+    font-size: 8px;
+    background-color: #4ec6de;
+    color: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .night-speed-start {
+    position: absolute;
+    top: -5px;
+    right: 11px;
+  }
+
+  .night-speed-end {
+    position: absolute;
+    top: -5px;
+    right: -11px;
+  }
+
+  .night-speed-start span, .night-speed-end span {
+    height: 11px;
+  }
+
+
+
+/* 
+  .night-speed-end span {
+    margin-top: 0.1em;
+  } */
+
+ 
+
+  .night-speed-line{
+    position: absolute;
+    top: -5px;
+    right: -0.16em;
+    height: 10px;
+    width: 20px;
+    border: solid 1px #000;
+    border-color: #4ec6de transparent transparent transparent;
+    border-radius: 50%/10px 10px 0 0;
+    rotate: -5deg;
+  }
