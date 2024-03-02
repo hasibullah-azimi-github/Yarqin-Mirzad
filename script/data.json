@@ -47,6 +47,118 @@
               "amount": "1 MB",
               "money": "1800",
               "feature" :{
+                "feature_type":"3 Mbps",
+                 "start":"6",
+                 "end":"7"
+              }
+            },
+            {
+              "amount": "2 MB",
+              "money": "3400",
+              "feature" :{
+                "feature_type":"6 Mbps",
+                 "start":"10",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "1 MB",
+              "money": "1500",
+              "feature" :{
+                "feature_type":"850 Kbps",
+                 "start":"10",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "2 MB",
+              "money": "3000",
+              "feature" :{
+                "feature_type":"1 MB",
+                 "start":"10",
+                 "end":"8"
+              }
+            }
+          ]
+        },
+      "hostspot":{
+          "limit": [
+            {
+              "amount": "24 GB",
+              "money": "850",
+              "speed" : "2 Mbs"
+            },
+            {
+              "amount": "12 GB",
+              "money": "450",
+              "speed" : "2 Mbs"
+            },
+            {
+              "amount": "6 GB",
+              "money": "250",
+              "speed" : "1 Mbs"
+            },
+            {
+              "amount": "1 GB",
+              "money": "60",
+              "speed" : "1 Mbs"
+            }
+          ]
+        },
+      
+      "info": {
+        "address": "",
+        "location": ""
+      }
+    },
+    "balkh":{
+      "family":{
+          "limit": [
+            {
+              "amount": "45 GB",
+              "money": "1000",
+              "speed" : "2 Mbps"
+            },
+            {
+              "amount": "75 GB",
+              "money": "1500",
+              "speed" : "2.5 Mbps",
+              "feature" :{
+                "feature_type":"رایگان",
+                 "start":"11",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "100 GB",
+              "money": "1800",
+              "speed" : "3 Mbps",
+              "feature" :{
+                "feature_type":"رایگان",
+                 "start":"11",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "140 GB",
+              "money": "2200",
+              "speed" : "3.5 Mbps",
+              "feature" :{
+                "feature_type":"رایگان",
+                 "start":"11",
+                 "end":"8"
+              }
+            }
+          ],
+          "unlimited": [
+            {
+              "amount": "750 KB",
+              "money": "1200"
+            },
+            {
+              "amount": "1 MB",
+              "money": "1800",
+              "feature" :{
                 "feature_type":"3 Mbs",
                  "start":"6",
                  "end":"7"
@@ -111,49 +223,198 @@
         "location": ""
       }
     },
-    "samangan":{
+    "code_barq":{
+      "family":{
+          "limit": [
+            {
+              "amount": "45 GB",
+              "money": "1000",
+              "speed" : "2 Mbps"
+            },
+            {
+              "amount": "75 GB",
+              "money": "1500",
+              "speed" : "2.5 Mbps",
+              "feature" :{
+                "feature_type":"رایگان",
+                 "start":"11",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "100 GB",
+              "money": "1800",
+              "speed" : "3 Mbps",
+              "feature" :{
+                "feature_type":"رایگان",
+                 "start":"11",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "140 GB",
+              "money": "2200",
+              "speed" : "3.5 Mbps",
+              "feature" :{
+                "feature_type":"رایگان",
+                 "start":"11",
+                 "end":"8"
+              }
+            }
+          ],
+          "unlimited": [
+            {
+              "amount": "750 KB",
+              "money": "1200"
+            },
+            {
+              "amount": "1 MB",
+              "money": "1800",
+              "feature" :{
+                "feature_type":"3 Mbs",
+                 "start":"6",
+                 "end":"7"
+              }
+            },
+            {
+              "amount": "2 MB",
+              "money": "3400",
+              "feature" :{
+                "feature_type":"6 Mbps",
+                 "start":"10",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "1 MB",
+              "money": "1500",
+              "feature" :{
+                "feature_type":"850 Kbps",
+                 "start":"10",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "2 MB",
+              "money": "3000",
+              "feature" :{
+                "feature_type":"1 MB",
+                 "start":"10",
+                 "end":"8"
+              }
+            }
+          ]
+        },
+      "hostspot":{
+          "limit": [
+            {
+              "amount": "24 GB",
+              "money": "850",
+              "speed" : "2 Mbs"
+            },
+            {
+              "amount": "12 GB",
+              "money": "450",
+              "speed" : "2 Mbs"
+            },
+            {
+              "amount": "6 GB",
+              "money": "250",
+              "speed" : "1 Mbs"
+            },
+            {
+              "amount": "1 GB",
+              "money": "60",
+              "speed" : "1 Mbs"
+            }
+          ]
+        },
+      
+      "info": {
+        "address": "",
+        "location": ""
+      }
+    },
+    "aqchah":{
         "family":{
             "limit": [
               {
-                "data": "5 GB",
-                "validity": "30 days"
+                "amount": "40 GB",
+                "money": "1000",
+                "speed" : "2 Mbps"
+              },
+              {
+                "amount": "70 GB",
+                "money": "1500",
+                "speed" : "2.5 Mbps"
+              },
+              {
+                "amount": "100 GB",
+                "money": "1800",
+                "speed" : "3 Mbps",
+                "feature":{
+                  "feature_type":"رایگان",
+                   "start":"11",
+                   "end":"8"
+                }
+              },
+              {
+                "amount": "200 GB",
+                "money": "3500",
+                "speed" : "3 Mbps",
+                "feature":{
+                  "feature_type":"رایگان",
+                   "start":"11",
+                   "end":"8"
+                }
               }
             ],
             "unlimited": [
               {
-                "data": "5 GB",
-                "validity": "30 days"
+                "amount": "1 MB",
+                "money": "2100",
+                "feature":{
+                    "feature_type":"2 MB",
+                     "start":"11",
+                     "end":"8"
+                  }
+              },
+              {
+                "amount": "2 MB",
+                "money": "3500",
+                "feature":{
+                  "feature_type":"4 MB",
+                   "start":"11",
+                   "end":"8"
+                }
               }
             ]
           },
         "hostspot":{
             "limit": [
               {
-                "data": "5 GB",
-                "validity": "30 days"
-              }
-            ],
-            "unlimited": [
+                "amount": "2 GB",
+                "money": "120",
+                "speed" : "1 Mbps"
+              },
               {
-                "data": "5 GB",
-                "validity": "30 days"
+                "amount": "5 GB",
+                "money": "220",
+                "speed" : "1 Mbps"
+              },
+              {
+                "amount": "5 GB",
+                "money": "350",
+                "speed" : "2 Mbps"
+              },
+              {
+                "amount": "20 GB",
+                "money": "600",
+                "speed" : "2.5 Mbps"
               }
             ]
           },
-        "commercial":{
-            "limit": [
-              {
-                "data": "5 GB",
-                "validity": "30 days"
-              }
-            ],
-            "unlimited": [
-              {
-                "data": "5 GB",
-                "validity": "30 days"
-              }
-            ]
-          },
+
         "info": {
           "address": "",
           "location": ""
