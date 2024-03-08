@@ -5,6 +5,7 @@ let contentBox = document.querySelector('.content_box');
 let limit_package;
 let unlimited_package;
 let content;
+let icon_type = '<i class="fa-regular fa-moon"></i>';
 let feature;
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -44,7 +45,7 @@ fetch("script/data.json")
 
 
       if (data[area]["family"].hasOwnProperty("limit")) {
-        for (let i = data[area]["family"]["limit"].length - 1; i >= 0; i--) {
+        for (let i = 0; i < data[area]["family"]["limit"].length; i++) {
 
           if(data[area]["family"]["limit"][i].hasOwnProperty("feature")){
             feature = `
@@ -101,7 +102,7 @@ fetch("script/data.json")
 
 
       if (data[area]["family"].hasOwnProperty("unlimited")) {
-        for (let i = data[area]["family"]["unlimited"].length - 1; i >= 0; i--) {
+        for (let i = 0; i < data[area]["family"]["unlimited"].length; i++) {
 
           if(data[area]["family"]["unlimited"][i].hasOwnProperty("feature")){
             feature = `
@@ -242,18 +243,27 @@ fetch("script/data.json")
       }
 
 
-      if (data[area]["hostspot"].hasOwnProperty("unlimited")) {
       
-        for (let i = data[area]["hostspot"]["unlimited"].length - 1; i >= 0; i--) {
+      if (data[area]["hostspot"].hasOwnProperty("unlimited")) {
+        
+     
+
+        for (let i = 0; i < data[area]["hostspot"]["unlimited"].length; i++) {
+
+          if(data[area]["hostspot"]["unlimited"][i]["type"] == "daily"){
+            icon_type = '<i class="fa-regular fa-sun" style="font-size:15px;"></i>';
+          }
+
+          console.log(data[area]["hostspot"]["unlimited"].length);
 
           if(data[area]["hostspot"]["unlimited"][i].hasOwnProperty("feature")){
             feature = `
             <div class="package-data-speed package-data-night-speed">
-            <i class="fa-regular fa-moon"></i>
-            <p>${data[area]["family"]["unlimited"][i]["feature"]["feature_type"]}</p>
+            ${icon_type}
+            <p>${data[area]["hostspot"]["unlimited"][i]["feature"]["feature_type"]}</p>
             <div class="night-speed-line"></div>
-            <div class="night-speed-start"><span>${data[area]["family"]["unlimited"][i]["feature"]["start"]}</span></div>
-            <div class="night-speed-end"><span>${data[area]["family"]["unlimited"][i]["feature"]["end"]}</span></div>
+            <div class="night-speed-start"><span>${data[area]["hostspot"]["unlimited"][i]["feature"]["start"]}</span></div>
+            <div class="night-speed-end"><span>${data[area]["hostspot"]["unlimited"][i]["feature"]["end"]}</span></div>
           </div>
             `;
           }else{

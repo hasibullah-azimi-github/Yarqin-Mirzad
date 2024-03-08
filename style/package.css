@@ -90,6 +90,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 20px;
 }
 
 .package {
@@ -200,6 +201,12 @@
 
 .package-data-night-speed {
     position: relative;
+
+  }
+
+  .package-data-night-speed i{
+    position: relative;
+    left: 0.025em;
   }
 
   .night-speed-start,

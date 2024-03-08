@@ -1,16 +1,805 @@
 {
+  "maymana":{
+    "family":{
+      "limit": [
+        {
+          "amount": "20 GB",
+          "money": "600",
+          "speed" : "3 Mbps"
+        },
+        {
+          "amount": "10 GB",
+          "money": "350",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "5 GB",
+          "money": "200",
+          "speed" : "1 Mbps"
+        }
+        
+      ],
+      "unlimited": [
+        {
+          "amount": "1 MB",
+          "money": "1500"
+        }
+      ]
+    },
+  "hostspot":{
+      "limit": [
+        {
+          "amount": "12 GB",
+          "money": "380",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "2200",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "120",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "85",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "1 GB",
+          "money": "45",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+	"andkhoy":{
+    "family":{
+      "limit": [
+        {
+          "amount": "200 GB",
+          "money": "3000",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "100 GB",
+          "money": "1750",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "80 GB",
+          "money": "1500",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "50 GB",
+          "money": "1000",
+          "speed" : "2.5 Mbps"
+        }
+      ],
+      "unlimited": [
+        {
+          "amount": "2 MB",
+          "money": "3500",
+          "feature":{
+              "feature_type":"4 MB",
+               "start":"11",
+               "end":"8"
+            }
+        },
+        {
+          "amount": "1 MB",
+          "money": "2000",
+          "feature":{
+              "feature_type":"2 MB",
+               "start":"11",
+               "end":"8"
+            }
+        }
+      ]
+    },
+  "hostspot":{
+      "limit": [
+        {
+          "amount": "25 GB",
+          "money": "550",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "15 GB",
+          "money": "350",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "8 GB",
+          "money": "200",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "100",
+          "speed" : "1 Mbps"
+        }
+      ],
+      "unlimited": [
+        {
+          "amount": "1 MB",
+          "money": "1400"
+        }
+      ]
+    }
+  },
+	"shirin_tagab":{
+    "family":{
+      "limit": [
+        {
+          "amount": "200 GB",
+          "money": "3000",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "100 GB",
+          "money": "1750",
+          "speed" : "3 Mbps",
+          "feature":{
+            "feature_type":"رایگان",
+             "start":"12",
+             "end":"8"
+          }
+        },
+        {
+          "amount": "75 GB",
+          "money": "1500",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "40 GB",
+          "money": "1000",
+          "speed" : "2 Mbps"
+        }
+        
+      ],
+      "unlimited": [
+        {
+          "amount": "2 MB",
+          "money": "3500",
+          "feature":{
+              "feature_type":"4 MB",
+               "start":"11",
+               "end":"8"
+            }
+        },
+        {
+          "amount": "1 MB",
+          "money": "2000",
+          "feature":{
+              "feature_type":"2 MB",
+               "start":"11",
+               "end":"8"
+            }
+        }
+      ]
+    },
+    "hostspot":{
+      "limit": [
+        
+        {
+          "amount": "10 GB",
+          "money": "300",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "200",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "120",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "80",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "1 GB",
+          "money": "40",
+          "speed" : "1 Mbps"
+        }
+      ],
+      "unlimited": [
+        {
+          "amount": "1 MB",
+          "money": "1400"
+        }
+      ]
+    }
+  },
+	"kolian":{},
+  "sheberghan":{
+    "family":{
+      "limit": [
+        {
+          "amount": "200 GB",
+          "money": "3000",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "100 GB",
+          "money": "1750",
+          "speed" : "3 Mbps",
+          "feature":{
+            "feature_type":"رایگان",
+             "start":"12",
+             "end":"8"
+          }
+        },
+        {
+          "amount": "75 GB",
+          "money": "1500",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "40 GB",
+          "money": "1000",
+          "speed" : "2 Mbps"
+        }
+        
+      ],
+      "unlimited": [
+        {
+          "amount": "2 MB",
+          "money": "3500",
+          "feature":{
+              "feature_type":"4 MB",
+               "start":"11",
+               "end":"8"
+            }
+        },
+        {
+          "amount": "1 MB",
+          "money": "2000",
+          "feature":{
+              "feature_type":"2 MB",
+               "start":"11",
+               "end":"8"
+            }
+        }
+      ]
+    },
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "10 GB",
+          "money": "300",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "200",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "120",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "80",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "1 GB",
+          "money": "40",
+          "speed" : "1 Mbps"
+        }
+      ],
+      "unlimited": [
+        {
+          "amount": "1 MB",
+          "money": "1400"
+        }
+      ]
+    }
+  },
+  "aqcha":{
+    "family":{
+        "limit": [
+          {
+            "amount": "200 GB",
+            "money": "3500",
+            "speed" : "3 Mbps",
+            "feature":{
+              "feature_type":"رایگان",
+               "start":"11",
+               "end":"8"
+            }
+          },
+          {
+            "amount": "100 GB",
+            "money": "1800",
+            "speed" : "3 Mbps",
+            "feature":{
+              "feature_type":"رایگان",
+               "start":"11",
+               "end":"8"
+            }
+          },
+          {
+            "amount": "70 GB",
+            "money": "1500",
+            "speed" : "2.5 Mbps"
+          },
+          {
+            "amount": "40 GB",
+            "money": "1000",
+            "speed" : "2 Mbps"
+          }
+        ],
+        "unlimited": [
+          {
+            "amount": "2 MB",
+            "money": "3500",
+            "feature":{
+              "feature_type":"4 MB",
+               "start":"11",
+               "end":"8"
+            }
+          },
+          {
+            "amount": "1 MB",
+            "money": "2100",
+            "feature":{
+                "feature_type":"2 MB",
+                 "start":"11",
+                 "end":"8"
+              }
+          }
+        ]
+      },
+    "hostspot":{
+        "limit": [
+          {
+            "amount": "20 GB",
+            "money": "600",
+            "speed" : "2.5 Mbps"
+          },
+          {
+            "amount": "10 GB",
+            "money": "350",
+            "speed" : "2 Mbps"
+          },
+          {
+            "amount": "5 GB",
+            "money": "220",
+            "speed" : "1 Mbps"
+          },
+          {
+            "amount": "2 GB",
+            "money": "120",
+            "speed" : "1 Mbps"
+          }
+        ]
+      }
+  },
+	"fayzabad":{
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "20 GB",
+          "money": "600",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "10 GB",
+          "money": "350",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "5 GB",
+          "money": "220",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "120",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+	"khwaja_du_koh":{
+    "family":{
+      "limit": [
+        {
+          "amount": "200 GB",
+          "money": "3000",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "100 GB",
+          "money": "1750",
+          "speed" : "3 Mbps",
+          "feature":{
+            "feature_type":"رایگان",
+             "start":"12",
+             "end":"8"
+          }
+        },
+        {
+          "amount": "75 GB",
+          "money": "1500",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "40 GB",
+          "money": "1000",
+          "speed" : "2 Mbps"
+        }
+        
+      ],
+      "unlimited": [
+        {
+          "amount": "2 MB",
+          "money": "3500",
+          "feature":{
+              "feature_type":"4 MB",
+               "start":"11",
+               "end":"8"
+            }
+        },
+        {
+          "amount": "1 MB",
+          "money": "2000",
+          "feature":{
+              "feature_type":"2 MB",
+               "start":"11",
+               "end":"8"
+            }
+        }
+      ]
+    },
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "10 GB",
+          "money": "300",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "200",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "120",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "80",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "1 GB",
+          "money": "40",
+          "speed" : "1 Mbps"
+        }
+      ],
+      "unlimited": [
+        {
+          "amount": "1 MB",
+          "money": "1400"
+        }
+      ]
+    }
+  },
+	"darzab":{
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "200 GB",
+          "money": "200",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "150 GB",
+          "money": "1750",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "100 GB",
+          "money": "1500",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "70 GB",
+          "money": "1400",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "50 GB",
+          "money": "1000",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "24 GB",
+          "money": "1000",
+          "speed" : "2 Mbps",
+          "feature" :{
+            "feature_type":"رایگان",
+             "start":"11",
+             "end":"8"
+          }
+        },
+        {
+          "amount": "12 GB",
+          "money": "500",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "8 GB",
+          "money": "400",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "300",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "180",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "120",
+          "speed" : "1 Mbps"
+        },
+        
+        {
+          "amount": "1 GB",
+          "money": "70",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+	"qush_tepa":{
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "200 GB",
+          "money": "200",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "150 GB",
+          "money": "1750",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "100 GB",
+          "money": "1500",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "70 GB",
+          "money": "1400",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "50 GB",
+          "money": "1000",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "24 GB",
+          "money": "1000",
+          "speed" : "2 Mbps",
+          "feature" :{
+            "feature_type":"رایگان",
+             "start":"11",
+             "end":"8"
+          }
+        },
+        {
+          "amount": "12 GB",
+          "money": "500",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "8 GB",
+          "money": "400",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "300",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "180",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "120",
+          "speed" : "1 Mbps"
+        },
+        
+        {
+          "amount": "1 GB",
+          "money": "70",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+  "aybak":{
+    "family":{
+      "limit": [
+        {
+          "amount": "200 GB",
+          "money": "3200",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "100 GB",
+          "money": "1800",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "75 GB",
+          "money": "1500",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "45 GB",
+          "money": "1000",
+          "speed" : "2 Mbps"
+        }
+      ],
+      "unlimited": [
+        {
+          "amount": "2 MB",
+          "money": "3500",
+          "feature":{
+              "feature_type":"4 MB",
+               "start":"11",
+               "end":"8"
+            }
+        },
+        {
+          "amount": "1 MB",
+          "money": "2000",
+          "feature":{
+              "feature_type":"2 MB",
+               "start":"11",
+               "end":"8"
+            }
+        }
+      ]
+    },
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "22 GB",
+          "money": "600",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "11 GB",
+          "money": "350",
+          "speed" : "1.5 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "220",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "100",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+	"khuram":{
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "22 GB",
+          "money": "600",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "11 GB",
+          "money": "350",
+          "speed" : "1.5 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "220",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "100",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+	"sarbagh":{
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "22 GB",
+          "money": "600",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "11 GB",
+          "money": "350",
+          "speed" : "1.5 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "220",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "100",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+	"darah_sof_balla":{
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "22 GB",
+          "money": "600",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "11 GB",
+          "money": "350",
+          "speed" : "1.5 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "220",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "100",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
   "mazar_e_sharif":{
       "family":{
           "limit": [
             {
-              "amount": "45 GB",
-              "money": "1000",
-              "speed" : "2 Mbps"
-            },
-            {
-              "amount": "75 GB",
-              "money": "1500",
-              "speed" : "2.5 Mbps",
+              "amount": "140 GB",
+              "money": "2200",
+              "speed" : "3.5 Mbps",
               "feature" :{
                 "feature_type":"رایگان",
                  "start":"11",
@@ -28,20 +817,30 @@
               }
             },
             {
-              "amount": "140 GB",
-              "money": "2200",
-              "speed" : "3.5 Mbps",
+              "amount": "75 GB",
+              "money": "1500",
+              "speed" : "2.5 Mbps",
               "feature" :{
                 "feature_type":"رایگان",
                  "start":"11",
                  "end":"8"
               }
+            },
+            {
+              "amount": "45 GB",
+              "money": "1000",
+              "speed" : "2 Mbps"
             }
           ],
           "unlimited": [
             {
-              "amount": "750 KB",
-              "money": "1200"
+              "amount": "2 MB",
+              "money": "3400",
+              "feature" :{
+                "feature_type":"6 Mbps",
+                 "start":"10",
+                 "end":"8"
+              }
             },
             {
               "amount": "1 MB",
@@ -53,10 +852,14 @@
               }
             },
             {
+              "amount": "750 KB",
+              "money": "1200"
+            },
+            {
               "amount": "2 MB",
-              "money": "3400",
+              "money": "3000",
               "feature" :{
-                "feature_type":"6 Mbps",
+                "feature_type":"1 MB",
                  "start":"10",
                  "end":"8"
               }
@@ -66,15 +869,6 @@
               "money": "1500",
               "feature" :{
                 "feature_type":"850 Kbps",
-                 "start":"10",
-                 "end":"8"
-              }
-            },
-            {
-              "amount": "2 MB",
-              "money": "3000",
-              "feature" :{
-                "feature_type":"1 MB",
                  "start":"10",
                  "end":"8"
               }
@@ -104,25 +898,15 @@
               "speed" : "1 Mbs"
             }
           ]
-        },
-      
-      "info": {
-        "address": "",
-        "location": ""
-      }
+        }
     },
     "balkh":{
       "family":{
           "limit": [
             {
-              "amount": "45 GB",
-              "money": "1000",
-              "speed" : "2 Mbps"
-            },
-            {
-              "amount": "75 GB",
-              "money": "1500",
-              "speed" : "2.5 Mbps",
+              "amount": "140 GB",
+              "money": "2200",
+              "speed" : "3.5 Mbps",
               "feature" :{
                 "feature_type":"رایگان",
                  "start":"11",
@@ -140,30 +924,22 @@
               }
             },
             {
-              "amount": "140 GB",
-              "money": "2200",
-              "speed" : "3.5 Mbps",
+              "amount": "75 GB",
+              "money": "1500",
+              "speed" : "2.5 Mbps",
               "feature" :{
                 "feature_type":"رایگان",
                  "start":"11",
                  "end":"8"
               }
+            },
+            {
+              "amount": "45 GB",
+              "money": "1000",
+              "speed" : "2 Mbps"
             }
           ],
           "unlimited": [
-            {
-              "amount": "750 KB",
-              "money": "1200"
-            },
-            {
-              "amount": "1 MB",
-              "money": "1800",
-              "feature" :{
-                "feature_type":"3 Mbs",
-                 "start":"6",
-                 "end":"7"
-              }
-            },
             {
               "amount": "2 MB",
               "money": "3400",
@@ -175,18 +951,31 @@
             },
             {
               "amount": "1 MB",
-              "money": "1500",
+              "money": "1800",
               "feature" :{
-                "feature_type":"850 Kbps",
-                 "start":"10",
-                 "end":"8"
+                "feature_type":"3 Mbps",
+                 "start":"6",
+                 "end":"7"
               }
+            },
+            {
+              "amount": "750 KB",
+              "money": "1200"
             },
             {
               "amount": "2 MB",
               "money": "3000",
               "feature" :{
                 "feature_type":"1 MB",
+                 "start":"10",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "1 MB",
+              "money": "1500",
+              "feature" :{
+                "feature_type":"850 Kbps",
                  "start":"10",
                  "end":"8"
               }
@@ -216,25 +1005,15 @@
               "speed" : "1 Mbs"
             }
           ]
-        },
-      
-      "info": {
-        "address": "",
-        "location": ""
-      }
+        }
     },
     "code_barq":{
       "family":{
           "limit": [
             {
-              "amount": "45 GB",
-              "money": "1000",
-              "speed" : "2 Mbps"
-            },
-            {
-              "amount": "75 GB",
-              "money": "1500",
-              "speed" : "2.5 Mbps",
+              "amount": "140 GB",
+              "money": "2200",
+              "speed" : "3.5 Mbps",
               "feature" :{
                 "feature_type":"رایگان",
                  "start":"11",
@@ -252,30 +1031,22 @@
               }
             },
             {
-              "amount": "140 GB",
-              "money": "2200",
-              "speed" : "3.5 Mbps",
+              "amount": "75 GB",
+              "money": "1500",
+              "speed" : "2.5 Mbps",
               "feature" :{
                 "feature_type":"رایگان",
                  "start":"11",
                  "end":"8"
               }
+            },
+            {
+              "amount": "45 GB",
+              "money": "1000",
+              "speed" : "2 Mbps"
             }
           ],
           "unlimited": [
-            {
-              "amount": "750 KB",
-              "money": "1200"
-            },
-            {
-              "amount": "1 MB",
-              "money": "1800",
-              "feature" :{
-                "feature_type":"3 Mbs",
-                 "start":"6",
-                 "end":"7"
-              }
-            },
             {
               "amount": "2 MB",
               "money": "3400",
@@ -287,18 +1058,31 @@
             },
             {
               "amount": "1 MB",
-              "money": "1500",
+              "money": "1800",
               "feature" :{
-                "feature_type":"850 Kbps",
-                 "start":"10",
-                 "end":"8"
+                "feature_type":"3 Mbps",
+                 "start":"6",
+                 "end":"7"
               }
+            },
+            {
+              "amount": "750 KB",
+              "money": "1200"
             },
             {
               "amount": "2 MB",
               "money": "3000",
               "feature" :{
                 "feature_type":"1 MB",
+                 "start":"10",
+                 "end":"8"
+              }
+            },
+            {
+              "amount": "1 MB",
+              "money": "1500",
+              "feature" :{
+                "feature_type":"850 Kbps",
                  "start":"10",
                  "end":"8"
               }
@@ -328,96 +1112,197 @@
               "speed" : "1 Mbs"
             }
           ]
-        },
-      
-      "info": {
-        "address": "",
-        "location": ""
-      }
-    },
-    "aqchah":{
-        "family":{
-            "limit": [
-              {
-                "amount": "40 GB",
-                "money": "1000",
-                "speed" : "2 Mbps"
-              },
-              {
-                "amount": "70 GB",
-                "money": "1500",
-                "speed" : "2.5 Mbps"
-              },
-              {
-                "amount": "100 GB",
-                "money": "1800",
-                "speed" : "3 Mbps",
-                "feature":{
-                  "feature_type":"رایگان",
-                   "start":"11",
-                   "end":"8"
-                }
-              },
-              {
-                "amount": "200 GB",
-                "money": "3500",
-                "speed" : "3 Mbps",
-                "feature":{
-                  "feature_type":"رایگان",
-                   "start":"11",
-                   "end":"8"
-                }
-              }
-            ],
-            "unlimited": [
-              {
-                "amount": "1 MB",
-                "money": "2100",
-                "feature":{
-                    "feature_type":"2 MB",
-                     "start":"11",
-                     "end":"8"
-                  }
-              },
-              {
-                "amount": "2 MB",
-                "money": "3500",
-                "feature":{
-                  "feature_type":"4 MB",
-                   "start":"11",
-                   "end":"8"
-                }
-              }
-            ]
-          },
-        "hostspot":{
-            "limit": [
-              {
-                "amount": "2 GB",
-                "money": "120",
-                "speed" : "1 Mbps"
-              },
-              {
-                "amount": "5 GB",
-                "money": "220",
-                "speed" : "1 Mbps"
-              },
-              {
-                "amount": "5 GB",
-                "money": "350",
-                "speed" : "2 Mbps"
-              },
-              {
-                "amount": "20 GB",
-                "money": "600",
-                "speed" : "2.5 Mbps"
-              }
-            ]
-          },
-
-        "info": {
-          "address": "",
-          "location": ""
         }
-      }
+    },
+  "sare_pol":{
+    "hostspot":{
+      "limit": [
+        {
+          "amount": "24 GB",
+          "money": "600",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "12 GB",
+          "money": "350",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "200",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "120",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "90",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "1 GB",
+          "money": "50",
+          "speed" : "1 Mbps"
+        }
+      ],
+      "unlimited": [
+        {
+          "amount": "2 MB",
+          "money": "2300",
+          "type":"daily",
+          "feature":{
+              "feature_type":"روزانه",
+               "start":"6",
+               "end":"8"
+            }
+        },
+        {
+          "amount": "1 MB",
+          "money": "1300",
+          "feature":{
+            "feature_type":"روزانه",
+            "start":"6",
+            "end":"8"
+            }
+        }
+      ]
+    }
+  },
+  "sancharak":{
+    
+    "family":{
+      "limit": [
+        {
+          "amount": "120 GB",
+          "money": "1700",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "50 GB",
+          "money": "1000",
+          "speed" : "2 Mbps"
+        },
+        {
+          "amount": "25 GB",
+          "money": "750",
+          "speed" : "1 Mbps"
+        }
+      ],
+      "unlimited": [
+        {
+          "amount": "2 MB",
+          "money": "4800"
+        },
+        {
+          "amount": "1 MB",
+          "money": "2500"
+        },
+        {
+          "amount": "750 KB",
+          "money": "2000"
+        },
+        {
+          "amount": "512 KB",
+          "money": "1500"
+        }
+      ]
+    },
+  "hostspot":{
+      "limit": [
+
+        {
+          "amount": "12 GB",
+          "money": "450",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "250",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "150",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "110",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "1 GB",
+          "money": "60",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+  "gosfandi":{
+    "hostspot":{
+      "limit": [
+
+        {
+          "amount": "12 GB",
+          "money": "450",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "250",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "150",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "110",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "1 GB",
+          "money": "60",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  },
+  "balkhab":{
+    "hostspot":{
+      "limit": [
+
+        {
+          "amount": "12 GB",
+          "money": "450",
+          "speed" : "2.5 Mbps"
+        },
+        {
+          "amount": "6 GB",
+          "money": "250",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "3 GB",
+          "money": "150",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "2 GB",
+          "money": "110",
+          "speed" : "1 Mbps"
+        },
+        {
+          "amount": "1 GB",
+          "money": "60",
+          "speed" : "1 Mbps"
+        }
+      ]
+    }
+  }
 }
