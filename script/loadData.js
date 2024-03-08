@@ -245,16 +245,11 @@ fetch("script/data.json")
 
       
       if (data[area]["hostspot"].hasOwnProperty("unlimited")) {
-        
-     
-
         for (let i = 0; i < data[area]["hostspot"]["unlimited"].length; i++) {
 
           if(data[area]["hostspot"]["unlimited"][i]["type"] == "daily"){
             icon_type = '<i class="fa-regular fa-sun" style="font-size:15px;"></i>';
           }
-
-          console.log(data[area]["hostspot"]["unlimited"].length);
 
           if(data[area]["hostspot"]["unlimited"][i].hasOwnProperty("feature")){
             feature = `
