@@ -54,6 +54,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"میمنه"
     }
   },
 	"andkhoy":{
@@ -130,6 +133,9 @@
           "money": "1400"
         }
       ]
+    },
+    "info":{
+      "distict_name":"اندخوی"
     }
   },
 	"shirin_tagab":{
@@ -218,9 +224,16 @@
           "money": "1400"
         }
       ]
+    },
+    "info":{
+      "distict_name":"شیرین تگان"
     }
   },
-	"kolian":{},
+	"kolian":{
+    "info":{
+      "distict_name":"کولیان"
+    }
+  },
   "sheberghan":{
     "family":{
       "limit": [
@@ -306,6 +319,9 @@
           "money": "1400"
         }
       ]
+    },
+    "info":{
+      "distict_name":"شبرغان"
     }
   },
   "aqcha":{
@@ -386,6 +402,9 @@
             "speed" : "1 Mbps"
           }
         ]
+      },
+      "info":{
+        "distict_name":"آقچه"
       }
   },
 	"fayzabad":{
@@ -412,6 +431,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"فیض آباد"
     }
   },
 	"khwaja_du_koh":{
@@ -499,6 +521,9 @@
           "money": "1400"
         }
       ]
+    },
+    "info":{
+      "distict_name":"خواجه دوه کوه"
     }
   },
 	"darzab":{
@@ -571,6 +596,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"درزآب"
     }
   },
 	"qush_tepa":{
@@ -643,6 +671,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"قوش تپه"
     }
   },
   "aybak":{
@@ -713,6 +744,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"ایبک"
     }
   },
 	"khuram":{
@@ -739,6 +773,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"خرم سارباغ"
     }
   },
 	"sarbagh":{
@@ -765,6 +802,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"سارباغ"
     }
   },
 	"darah_sof_balla":{
@@ -791,6 +831,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"دره صوف بالا"
     }
   },
   "mazar_e_sharif":{
@@ -898,6 +941,9 @@
               "speed" : "1 Mbs"
             }
           ]
+        },
+        "info":{
+          "distict_name":"مزارشریف"
         }
     },
     "balkh":{
@@ -1005,6 +1051,9 @@
               "speed" : "1 Mbs"
             }
           ]
+        },
+        "info":{
+          "distict_name":"بلخ"
         }
     },
     "code_barq":{
@@ -1112,6 +1161,9 @@
               "speed" : "1 Mbs"
             }
           ]
+        },
+        "info":{
+          "distict_name":"کود برق"
         }
     },
   "sare_pol":{
@@ -1169,6 +1221,9 @@
             }
         }
       ]
+    },
+    "info":{
+      "distict_name":"سرپل"
     }
   },
   "sancharak":{
@@ -1239,6 +1294,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"سنچارک"
     }
   },
   "gosfandi":{
@@ -1271,6 +1329,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"گوسفندی"
     }
   },
   "balkhab":{
@@ -1303,6 +1364,9 @@
           "speed" : "1 Mbps"
         }
       ]
+    },
+    "info":{
+      "distict_name":"بلخ"
     }
   }
 }

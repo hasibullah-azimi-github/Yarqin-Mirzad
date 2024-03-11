@@ -16,9 +16,17 @@ if(area){
 fetch("script/data.json")
 .then((response) => response.json())
   .then((data) => {
+    if(data.hasOwnProperty(area)){
+
+
+    document.querySelector(".navbar-items li:nth-child(3) div p").style.backgroundColor = "#f5f6f7";
+    const item =  document.querySelector(`[href="packages.html?data=${area}"]`);
+    item.style.backgroundColor = "#f5f6f7";
+    item.parentElement.parentElement.parentElement.firstElementChild.style.backgroundColor = "#f5f6f7";
+    document.querySelector(".district-info h2").textContent =" نمایندگی: "+ data[area]["info"].distict_name;
+ 
 
     if (data[area].hasOwnProperty("family")) {
-
 
 
  
@@ -26,6 +34,7 @@ fetch("script/data.json")
       createButton("فامیلی", "tab_btn active");
 
 
+      
    
 
         contentBox.innerHTML += `
@@ -453,6 +462,7 @@ fetch("script/data.json")
     }
 
     handleTabButtonClick();
+  }
   })
   .catch((error) => {
     console.error("Error loading JSON file: " + error);

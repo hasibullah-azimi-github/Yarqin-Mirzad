@@ -141,7 +141,7 @@
 
 
 .content_box{
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
 }
 
 .content_box .content{
@@ -201,7 +201,7 @@
 .about-us-bottom-content-head{
   /* background-color: rebeccapurple; */
   text-align: right;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .about-us-bottom-content-detail{
@@ -209,13 +209,17 @@
   padding-right: 50px;
 }
 
-.about-us-bottom-content-detail ul li{
+
+.content_box .content ul{
   margin: 10px 0;
   line-height: 2.2;
   text-justify: inter-word;
   text-align: justify;
 }
 
+.content_box .content ul li{
+  margin: 15px 0;
+}
 
 
 @media screen and (max-width: 900px) {
